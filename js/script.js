@@ -16,40 +16,40 @@
     windowReady = false,
 
     plugins = {
-      bootstrapTooltip:        $( '[data-toggle="tooltip"]' ),
-      bootstrapModal:          $( '.modal' ),
-      bootstrapTabs:           $( '.tabs-custom' ),
-      captcha:                 $( '.recaptcha' ),
-      campaignMonitor:         $( '.campaign-mailform' ),
-      copyrightYear:           $( '.copyright-year' ),
-      checkbox:                $( 'input[type="checkbox"]' ),
-      lightGallery:            $( '[data-lightgallery="group"]' ),
-      lightGalleryItem:        $( '[data-lightgallery="item"]' ),
-      lightDynamicGalleryItem: $( '[data-lightgallery="dynamic"]' ),
-      materialParallax:        $( '.parallax-container' ),
-      mailchimp:               $( '.mailchimp-mailform' ),
-      popover:                 $( '[data-toggle="popover"]' ),
-      preloader:               $( '.preloader' ),
-      rdNavbar:                $( '.rd-navbar' ),
-      rdMailForm:              $( '.rd-mailform' ),
-      rdInputLabel:            $( '.form-label' ),
-      regula:                  $( '[data-constraints]' ),
-      radio:                   $( 'input[type="radio"]' ),
-      search:                  $( '.rd-search' ),
-      searchResults:           $( '.rd-search-results' ),
-      statefulButton:          $( '.btn-stateful' ),
-      viewAnimate:             $( '.view-animate' ),
-      wow:                     $( '.wow' ),
-      maps:                    $( '.google-map-container' ),
-      dataSplitting:           $('[data-splitting]'),
-      selectFilter:            $("select"),
-      slick:                   $('.slick-slider'),
-      swiper:                  document.querySelectorAll( '.swiper-container' ),
-      counter:                 document.querySelectorAll( '.counter' ),
-      progressLinear:          document.querySelectorAll( '.progress-linear' ),
-      progressCircle:          document.querySelectorAll( '.progress-circle' ),
-      countdown:               document.querySelectorAll( '.countdown' ),
-      waves:                   document.querySelectorAll('.waves')
+      bootstrapTooltip: $('[data-toggle="tooltip"]'),
+      bootstrapModal: $('.modal'),
+      bootstrapTabs: $('.tabs-custom'),
+      captcha: $('.recaptcha'),
+      campaignMonitor: $('.campaign-mailform'),
+      copyrightYear: $('.copyright-year'),
+      checkbox: $('input[type="checkbox"]'),
+      lightGallery: $('[data-lightgallery="group"]'),
+      lightGalleryItem: $('[data-lightgallery="item"]'),
+      lightDynamicGalleryItem: $('[data-lightgallery="dynamic"]'),
+      materialParallax: $('.parallax-container'),
+      mailchimp: $('.mailchimp-mailform'),
+      popover: $('[data-toggle="popover"]'),
+      preloader: $('.preloader'),
+      rdNavbar: $('.rd-navbar'),
+      rdMailForm: $('.rd-mailform'),
+      rdInputLabel: $('.form-label'),
+      regula: $('[data-constraints]'),
+      radio: $('input[type="radio"]'),
+      search: $('.rd-search'),
+      searchResults: $('.rd-search-results'),
+      statefulButton: $('.btn-stateful'),
+      viewAnimate: $('.view-animate'),
+      wow: $('.wow'),
+      maps: $('.google-map-container'),
+      dataSplitting: $('[data-splitting]'),
+      selectFilter: $("select"),
+      slick: $('.slick-slider'),
+      swiper: document.querySelectorAll('.swiper-container'),
+      counter: document.querySelectorAll('.counter'),
+      progressLinear: document.querySelectorAll('.progress-linear'),
+      progressCircle: document.querySelectorAll('.progress-circle'),
+      countdown: document.querySelectorAll('.countdown'),
+      waves: document.querySelectorAll('.waves')
     };
 
   /**
@@ -57,7 +57,7 @@
    * @param {object} elem - jQuery object
    * @return {boolean}
    */
-  function isScrolledIntoView ( elem ) {
+  function isScrolledIntoView(elem) {
     return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
   }
 
@@ -66,16 +66,16 @@
    * @param {object} element - jQuery object
    * @param {function} func - init function
    */
-  function lazyInit( element, func ) {
+  function lazyInit(element, func) {
     var scrollHandler = function () {
-      if ( ( !element.hasClass( 'lazy-loaded' ) && ( isScrolledIntoView( element ) ) ) ) {
-        func.call( element );
-        element.addClass( 'lazy-loaded' );
+      if ((!element.hasClass('lazy-loaded') && (isScrolledIntoView(element)))) {
+        func.call(element);
+        element.addClass('lazy-loaded');
       }
     };
 
     scrollHandler();
-    $window.on( 'scroll', scrollHandler );
+    $window.on('scroll', scrollHandler);
   }
 
   // Initialize scripts that require a loaded window
@@ -85,7 +85,7 @@
     // Page loader & Page transition
     if (plugins.preloader.length) {
       pageTransition({
-        target: document.querySelector( '.page' ),
+        target: document.querySelector('.page'),
         delay: 0,
         duration: 500,
         classIn: 'fadeIn',
@@ -94,10 +94,10 @@
         conditions: function (event, link) {
           return link && !/(\#|javascript:void\(0\)|callto:|tel:|mailto:|:\/\/)/.test(link) && !event.currentTarget.hasAttribute('data-lightgallery');
         },
-        onTransitionStart: function ( options ) {
-          setTimeout( function () {
+        onTransitionStart: function (options) {
+          setTimeout(function () {
             plugins.preloader.removeClass('loaded');
-          }, options.duration * .75 );
+          }, options.duration * .75);
         },
         onReady: function () {
           plugins.preloader.addClass('loaded');
@@ -107,81 +107,81 @@
     }
 
     // WOW
-    if ( plugins.wow.length && isDesktop ) {
+    if (plugins.wow.length && isDesktop) {
       new WOW({
         offset: -100,
       }).init();
     }
 
     // Counter
-    if ( plugins.counter ) {
-      for ( var i = 0; i < plugins.counter.length; i++ ) {
+    if (plugins.counter) {
+      for (var i = 0; i < plugins.counter.length; i++) {
         var
           node = plugins.counter[i],
           counter = aCounter({
             node: node,
-            duration: node.getAttribute( 'data-duration' ) || 1000
+            duration: node.getAttribute('data-duration') || 1000
           }),
-          scrollHandler = (function() {
-            if ( Util.inViewport( this ) && !this.classList.contains( 'animated-first' ) ) {
+          scrollHandler = (function () {
+            if (Util.inViewport(this) && !this.classList.contains('animated-first')) {
               this.counter.run();
-              this.classList.add( 'animated-first' );
+              this.classList.add('animated-first');
             }
-          }).bind( node ),
-          blurHandler = (function() {
-            this.counter.params.to = parseInt( this.textContent, 10 );
+          }).bind(node),
+          blurHandler = (function () {
+            this.counter.params.to = parseInt(this.textContent, 10);
             this.counter.run();
-          }).bind( node );
+          }).bind(node);
 
 
-          scrollHandler();
-          window.addEventListener( 'scroll', scrollHandler );
+        scrollHandler();
+        window.addEventListener('scroll', scrollHandler);
       }
     }
 
     // Progress Bar
-    if ( plugins.progressLinear ) {
-      for ( var i = 0; i < plugins.progressLinear.length; i++ ) {
+    if (plugins.progressLinear) {
+      for (var i = 0; i < plugins.progressLinear.length; i++) {
         var
           container = plugins.progressLinear[i],
           counter = aCounter({
-            node: container.querySelector( '.progress-linear-counter' ),
-            duration: container.getAttribute( 'data-duration' ) || 1000,
-            onStart: function() {
+            node: container.querySelector('.progress-linear-counter'),
+            duration: container.getAttribute('data-duration') || 1000,
+            onStart: function () {
               this.custom.bar.style.width = this.params.to + '%';
             }
           });
 
         counter.custom = {
           container: container,
-          bar: container.querySelector( '.progress-linear-bar' ),
-          onScroll: (function() {
-            if ( ( Util.inViewport( this.custom.container ) && !this.custom.container.classList.contains( 'animated' ) ) ) {
+          bar: container.querySelector('.progress-linear-bar'),
+          onScroll: (function () {
+            if ((Util.inViewport(this.custom.container) && !this.custom.container.classList.contains('animated'))) {
               this.run();
-              this.custom.container.classList.add( 'animated' );
+              this.custom.container.classList.add('animated');
             }
-          }).bind( counter ),
-          onBlur: (function() {
-            this.params.to = parseInt( this.params.node.textContent, 10 );
+          }).bind(counter),
+          onBlur: (function () {
+            this.params.to = parseInt(this.params.node.textContent, 10);
             this.run();
-          }).bind( counter )
+          }).bind(counter)
         };
 
         counter.custom.onScroll();
-        document.addEventListener( 'scroll', counter.custom.onScroll );
+        document.addEventListener('scroll', counter.custom.onScroll);
       }
     }
 
     // Progress Circle
-    if ( plugins.progressCircle ) {
-      for ( var i = 0; i < plugins.progressCircle.length; i++ ) {
+    if (plugins.progressCircle) {
+      for (var i = 0; i < plugins.progressCircle.length; i++) {
         var
           container = plugins.progressCircle[i],
           counter = aCounter({
-            node: container.querySelector( '.progress-circle-counter' ),
+            node: container.querySelector('.progress-circle-counter'),
             duration: 500,
-            onUpdate: function( value ) {
-              this.custom.bar.render( value * 3.6 );
+            onUpdate: function (value) {
+              this.custom.bar.render(value * 3.6);
             }
           });
 
@@ -189,63 +189,63 @@
 
         counter.custom = {
           container: container,
-          bar: aProgressCircle({ node: container.querySelector( '.progress-circle-bar' ) }),
-          onScroll: (function() {
-            if ( Util.inViewport( this.custom.container ) && !this.custom.container.classList.contains( 'animated' ) ) {
+          bar: aProgressCircle({ node: container.querySelector('.progress-circle-bar') }),
+          onScroll: (function () {
+            if (Util.inViewport(this.custom.container) && !this.custom.container.classList.contains('animated')) {
               this.run();
-              this.custom.container.classList.add( 'animated' );
+              this.custom.container.classList.add('animated');
             }
-          }).bind( counter ),
-          onBlur: (function() {
-            this.params.to = parseInt( this.params.node.textContent, 10 );
+          }).bind(counter),
+          onBlur: (function () {
+            this.params.to = parseInt(this.params.node.textContent, 10);
             this.run();
-          }).bind( counter )
+          }).bind(counter)
         };
 
         counter.custom.onScroll();
-        window.addEventListener( 'scroll', counter.custom.onScroll );
+        window.addEventListener('scroll', counter.custom.onScroll);
       }
     }
 
     // Spliting
-    if ( plugins.dataSplitting.length && isDesktop ) {
+    if (plugins.dataSplitting.length && isDesktop) {
       Splitting();
     }
 
     // Triangle
-    function triangleCreate ( element ) {
-      for ( var i = 0; i < element.length; i++ ) {
-        var node = $( element[ i ] );
-        var triangle = node.find( $( node.data('triangle' ) ) );
+    function triangleCreate(element) {
+      for (var i = 0; i < element.length; i++) {
+        var node = $(element[i]);
+        var triangle = node.find($(node.data('triangle')));
 
         var triangleWidth = node.innerWidth();
         var triangleHeight = node.innerHeight();
 
         triangle.css({
-          'border-top-width'  : triangleHeight+'px',
-          'border-left-width' : triangleWidth+'px'
+          'border-top-width': triangleHeight + 'px',
+          'border-left-width': triangleWidth + 'px'
         });
       }
     }
-    var elementWithTriangleRight = $( '[data-triangle]' );
-    if ( elementWithTriangleRight.length ) {
-      triangleCreate( elementWithTriangleRight );
-      $window.on( 'resize orientationchange' , function () {
-        triangleCreate( elementWithTriangleRight );
+    var elementWithTriangleRight = $('[data-triangle]');
+    if (elementWithTriangleRight.length) {
+      triangleCreate(elementWithTriangleRight);
+      $window.on('resize orientationchange', function () {
+        triangleCreate(elementWithTriangleRight);
       });
     }
 
-    if ( plugins.waves.length ) {
-      for ( var i = 0; i < plugins.waves.length; i++ ) {
+    if (plugins.waves.length) {
+      for (var i = 0; i < plugins.waves.length; i++) {
         var wave = plugins.waves[i];
         var waves = new SineWaves({
           el: wave,
-          speed: wave.getAttribute('data-speed') ||5,
-          width: function() {
+          speed: wave.getAttribute('data-speed') || 5,
+          width: function () {
             return $(window).width();
           },
 
-          height: function() {
+          height: function () {
             return $(window).height();
           },
 
@@ -267,21 +267,21 @@
           ],
 
           // Called on window resize
-          resizeEvent: function() {
+          resizeEvent: function () {
             var gradient1 = this.ctx.createLinearGradient(0, 0, this.width, 0);
-            gradient1.addColorStop(0,"rgba(0, 172, 238, 1)");
-            gradient1.addColorStop(0.54,"rgba(239, 165, 6, 1)");
-            gradient1.addColorStop(1,"rgba(236, 57, 139, 1)");
+            gradient1.addColorStop(0, "rgba(0, 172, 238, 1)");
+            gradient1.addColorStop(0.54, "rgba(239, 165, 6, 1)");
+            gradient1.addColorStop(1, "rgba(236, 57, 139, 1)");
 
             var gradient2 = this.ctx.createLinearGradient(0, 0, this.width, 0);
-            gradient2.addColorStop(0,"rgba(32, 171, 208, 1)");
-            gradient2.addColorStop(0.50,"rgba(83, 72, 182, 1)");
-            gradient2.addColorStop(1,"rgba(234, 8, 140, 1)");
+            gradient2.addColorStop(0, "rgba(32, 171, 208, 1)");
+            gradient2.addColorStop(0.50, "rgba(83, 72, 182, 1)");
+            gradient2.addColorStop(1, "rgba(234, 8, 140, 1)");
 
             var index = -1;
             var length = this.waves.length;
-            while(++index < length){
-              if ( index === 0 ) {
+            while (++index < length) {
+              if (index === 0) {
                 this.waves[index].strokeStyle = gradient1;
               }
               else {
@@ -298,7 +298,7 @@
         });
 
         $window.scroll(function () {
-          if ( !isScrolledIntoView( $(wave) ) ) {
+          if (!isScrolledIntoView($(wave))) {
             waves.running = false;
             waves.update();
           } else {
@@ -319,20 +319,20 @@
      * @desc Sets the actual previous index based on the position of the slide in the markup. Should be the most recent action.
      * @param {object} swiper - swiper instance
      */
-    function setRealPrevious( swiper ) {
-      var element = swiper.$wrapperEl[0].children[ swiper.activeIndex ];
-      swiper.realPrevious = Array.prototype.indexOf.call( element.parentNode.children, element );
+    function setRealPrevious(swiper) {
+      var element = swiper.$wrapperEl[0].children[swiper.activeIndex];
+      swiper.realPrevious = Array.prototype.indexOf.call(element.parentNode.children, element);
     }
 
     /**
      * @desc Sets slides background images from attribute 'data-slide-bg'
      * @param {object} swiper - swiper instance
      */
-    function setBackgrounds( swiper ) {
-      var swiperSlides = swiper.el.querySelectorAll( '[data-slide-bg]' );
+    function setBackgrounds(swiper) {
+      var swiperSlides = swiper.el.querySelectorAll('[data-slide-bg]');
       for (var i = 0; i < swiperSlides.length; i++) {
         var swiperSlide = swiperSlides[i];
-        swiperSlide.style.backgroundImage = 'url('+ swiperSlide.getAttribute( 'data-slide-bg' ) +')';
+        swiperSlide.style.backgroundImage = 'url(' + swiperSlide.getAttribute('data-slide-bg') + ')';
       }
     }
 
@@ -340,32 +340,32 @@
      * @desc Animate captions on active slides
      * @param {object} swiper - swiper instance
      */
-    function initCaptionAnimate( swiper ) {
+    function initCaptionAnimate(swiper) {
       var
-        animate = function ( caption ) {
-          return function() {
+        animate = function (caption) {
+          return function () {
             var duration;
-            if ( duration = caption.getAttribute( 'data-caption-duration' ) ) caption.style.animationDuration = duration +'ms';
-            caption.classList.remove( 'not-animated' );
-            caption.classList.add( caption.getAttribute( 'data-caption-animate' ) );
-            caption.classList.add( 'animated' );
+            if (duration = caption.getAttribute('data-caption-duration')) caption.style.animationDuration = duration + 'ms';
+            caption.classList.remove('not-animated');
+            caption.classList.add(caption.getAttribute('data-caption-animate'));
+            caption.classList.add('animated');
           };
         },
-        initializeAnimation = function ( captions ) {
-          for ( var i = 0; i < captions.length; i++ ) {
+        initializeAnimation = function (captions) {
+          for (var i = 0; i < captions.length; i++) {
             var caption = captions[i];
-            caption.classList.remove( 'animated' );
-            caption.classList.remove( caption.getAttribute( 'data-caption-animate' ) );
-            caption.classList.add( 'not-animated' );
+            caption.classList.remove('animated');
+            caption.classList.remove(caption.getAttribute('data-caption-animate'));
+            caption.classList.add('not-animated');
           }
         },
-        finalizeAnimation = function ( captions ) {
-          for ( var i = 0; i < captions.length; i++ ) {
+        finalizeAnimation = function (captions) {
+          for (var i = 0; i < captions.length; i++) {
             var caption = captions[i];
-            if ( caption.getAttribute( 'data-caption-delay' ) ) {
-              setTimeout( animate( caption ), Number( caption.getAttribute( 'data-caption-delay' ) ) );
+            if (caption.getAttribute('data-caption-delay')) {
+              setTimeout(animate(caption), Number(caption.getAttribute('data-caption-delay')));
             } else {
-              animate( caption )();
+              animate(caption)();
             }
           }
         };
@@ -375,21 +375,21 @@
         animationEvent: 'slideChangeTransitionEnd'
       };
 
-      initializeAnimation( swiper.$wrapperEl[0].querySelectorAll( '[data-caption-animate]' ) );
-      finalizeAnimation( swiper.$wrapperEl[0].children[ swiper.activeIndex ].querySelectorAll( '[data-caption-animate]' ) );
+      initializeAnimation(swiper.$wrapperEl[0].querySelectorAll('[data-caption-animate]'));
+      finalizeAnimation(swiper.$wrapperEl[0].children[swiper.activeIndex].querySelectorAll('[data-caption-animate]'));
 
-      if ( swiper.params.caption.animationEvent === 'slideChangeTransitionEnd' ) {
-        swiper.on( swiper.params.caption.animationEvent, function() {
-          initializeAnimation( swiper.$wrapperEl[0].children[ swiper.previousIndex ].querySelectorAll( '[data-caption-animate]' ) );
-          finalizeAnimation( swiper.$wrapperEl[0].children[ swiper.activeIndex ].querySelectorAll( '[data-caption-animate]' ) );
+      if (swiper.params.caption.animationEvent === 'slideChangeTransitionEnd') {
+        swiper.on(swiper.params.caption.animationEvent, function () {
+          initializeAnimation(swiper.$wrapperEl[0].children[swiper.previousIndex].querySelectorAll('[data-caption-animate]'));
+          finalizeAnimation(swiper.$wrapperEl[0].children[swiper.activeIndex].querySelectorAll('[data-caption-animate]'));
         });
       } else {
-        swiper.on( 'slideChangeTransitionEnd', function() {
-          initializeAnimation( swiper.$wrapperEl[0].children[ swiper.previousIndex ].querySelectorAll( '[data-caption-animate]' ) );
+        swiper.on('slideChangeTransitionEnd', function () {
+          initializeAnimation(swiper.$wrapperEl[0].children[swiper.previousIndex].querySelectorAll('[data-caption-animate]'));
         });
 
-        swiper.on( swiper.params.caption.animationEvent, function() {
-          finalizeAnimation( swiper.$wrapperEl[0].children[ swiper.activeIndex ].querySelectorAll( '[data-caption-animate]' ) );
+        swiper.on(swiper.params.caption.animationEvent, function () {
+          finalizeAnimation(swiper.$wrapperEl[0].children[swiper.activeIndex].querySelectorAll('[data-caption-animate]'));
         });
       }
     }
@@ -432,9 +432,9 @@
       regula.custom({
         name: 'PhoneNumber',
         defaultMessage: 'Invalid phone number format',
-        validator: function() {
-          if ( this.value === '' ) return true;
-          else return /^(\+\d)?[0-9\-\(\) ]{5,}$/i.test( this.value );
+        validator: function () {
+          if (this.value === '') return true;
+          else return /^(\+\d)?[0-9\-\(\) ]{5,}$/i.test(this.value);
         }
       });
 
@@ -451,7 +451,7 @@
         if (e.type !== "blur") if (!$this.parent().hasClass("has-error")) return;
         if ($this.parents('.rd-mailform').hasClass('success')) return;
 
-        if (( results = $this.regula('validate') ).length) {
+        if ((results = $this.regula('validate')).length) {
           for (i = 0; i < results.length; i++) {
             $this.siblings(".form-validation").text(results[i].message).parent().addClass("has-error");
           }
@@ -570,9 +570,9 @@
       for (var i = 0; i < plugins.captcha.length; i++) {
         var
           $captcha = $(plugins.captcha[i]),
-          resizeHandler = (function() {
+          resizeHandler = (function () {
             var
-              frame = this.querySelector( 'iframe' ),
+              frame = this.querySelector('iframe'),
               inner = this.firstElementChild,
               inner2 = inner.firstElementChild,
               containerRect = null,
@@ -585,14 +585,14 @@
 
             containerRect = this.getBoundingClientRect();
             frameRect = frame.getBoundingClientRect();
-            scale = containerRect.width/frameRect.width;
+            scale = containerRect.width / frameRect.width;
 
-            if ( scale < 1 ) {
-              inner2.style.transform = 'scale('+ scale +')';
-              inner.style.height = ( frameRect.height * scale ) + 'px';
-              inner.style.width = ( frameRect.width * scale ) + 'px';
+            if (scale < 1) {
+              inner2.style.transform = 'scale(' + scale + ')';
+              inner.style.height = (frameRect.height * scale) + 'px';
+              inner.style.width = (frameRect.width * scale) + 'px';
             }
-          }).bind( plugins.captcha[i] );
+          }).bind(plugins.captcha[i]);
 
         grecaptcha.render(
           $captcha.attr('id'),
@@ -608,9 +608,9 @@
 
         $captcha.after("<span class='form-validation'></span>");
 
-        if ( plugins.captcha[i].hasAttribute( 'data-auto-size' ) ) {
+        if (plugins.captcha[i].hasAttribute('data-auto-size')) {
           resizeHandler();
-          window.addEventListener( 'resize', resizeHandler );
+          window.addEventListener('resize', resizeHandler);
         }
       }
     };
@@ -623,9 +623,9 @@
       plugins.bootstrapTooltip.tooltip('dispose');
 
       if (window.innerWidth < 576) {
-        plugins.bootstrapTooltip.tooltip({placement: 'bottom'});
+        plugins.bootstrapTooltip.tooltip({ placement: 'bottom' });
       } else {
-        plugins.bootstrapTooltip.tooltip({placement: tooltipPlacement});
+        plugins.bootstrapTooltip.tooltip({ placement: tooltipPlacement });
       }
     }
 
@@ -634,16 +634,16 @@
      * @param {object} itemsToInit - jQuery object
      * @param {string} [addClass] - additional gallery class
      */
-    function initLightGallery ( itemsToInit, addClass ) {
-      $( itemsToInit ).lightGallery( {
-        thumbnail: $( itemsToInit ).attr( "data-lg-thumbnail" ) !== "false",
+    function initLightGallery(itemsToInit, addClass) {
+      $(itemsToInit).lightGallery({
+        thumbnail: $(itemsToInit).attr("data-lg-thumbnail") !== "false",
         selector: "[data-lightgallery='item']",
-        autoplay: $( itemsToInit ).attr( "data-lg-autoplay" ) === "true",
-        pause: parseInt( $( itemsToInit ).attr( "data-lg-autoplay-delay" ) ) || 5000,
+        autoplay: $(itemsToInit).attr("data-lg-autoplay") === "true",
+        pause: parseInt($(itemsToInit).attr("data-lg-autoplay-delay")) || 5000,
         addClass: addClass,
-        mode: $( itemsToInit ).attr( "data-lg-animation" ) || "lg-slide",
-        loop: $( itemsToInit ).attr( "data-lg-loop" ) !== "false"
-      } );
+        mode: $(itemsToInit).attr("data-lg-animation") || "lg-slide",
+        loop: $(itemsToInit).attr("data-lg-loop") !== "false"
+      });
     }
 
     /**
@@ -651,20 +651,20 @@
      * @param {object} itemsToInit - jQuery object
      * @param {string} [addClass] - additional gallery class
      */
-    function initDynamicLightGallery ( itemsToInit, addClass ) {
-      $( itemsToInit ).on( "click", function () {
-        $( itemsToInit ).lightGallery( {
-          thumbnail: $( itemsToInit ).attr( "data-lg-thumbnail" ) !== "false",
+    function initDynamicLightGallery(itemsToInit, addClass) {
+      $(itemsToInit).on("click", function () {
+        $(itemsToInit).lightGallery({
+          thumbnail: $(itemsToInit).attr("data-lg-thumbnail") !== "false",
           selector: "[data-lightgallery='item']",
-          autoplay: $( itemsToInit ).attr( "data-lg-autoplay" ) === "true",
-          pause: parseInt( $( itemsToInit ).attr( "data-lg-autoplay-delay" ) ) || 5000,
+          autoplay: $(itemsToInit).attr("data-lg-autoplay") === "true",
+          pause: parseInt($(itemsToInit).attr("data-lg-autoplay-delay")) || 5000,
           addClass: addClass,
-          mode: $( itemsToInit ).attr( "data-lg-animation" ) || "lg-slide",
-          loop: $( itemsToInit ).attr( "data-lg-loop" ) !== "false",
+          mode: $(itemsToInit).attr("data-lg-animation") || "lg-slide",
+          loop: $(itemsToInit).attr("data-lg-loop") !== "false",
           dynamic: true,
-          dynamicEl: JSON.parse( $( itemsToInit ).attr( "data-lg-dynamic-elements" ) ) || []
-        } );
-      } );
+          dynamicEl: JSON.parse($(itemsToInit).attr("data-lg-dynamic-elements")) || []
+        });
+      });
     }
 
     /**
@@ -672,8 +672,8 @@
      * @param {object} itemToInit - jQuery object
      * @param {string} [addClass] - additional gallery class
      */
-    function initLightGalleryItem ( itemToInit, addClass ) {
-      $( itemToInit ).lightGallery( {
+    function initLightGalleryItem(itemToInit, addClass) {
+      $(itemToInit).lightGallery({
         selector: "this",
         addClass: addClass,
         counter: false,
@@ -687,7 +687,7 @@
           byline: 0,
           portrait: 0
         }
-      } );
+      });
     }
 
     /**
@@ -702,7 +702,7 @@
           coordinates.lng
         ), marker, map)
       } catch (e) {
-        map.geocoder.geocode({'address': str}, function (results, status) {
+        map.geocoder.geocode({ 'address': str }, function (results, status) {
           if (status === google.maps.GeocoderStatus.OK) {
             var latitude = results[0].geometry.location.lat();
             var longitude = results[0].geometry.location.lng();
@@ -722,14 +722,14 @@
     function initMaps() {
       var key;
 
-      for ( var i = 0; i < plugins.maps.length; i++ ) {
-        if ( plugins.maps[i].hasAttribute( "data-key" ) ) {
-          key = plugins.maps[i].getAttribute( "data-key" );
+      for (var i = 0; i < plugins.maps.length; i++) {
+        if (plugins.maps[i].hasAttribute("data-key")) {
+          key = plugins.maps[i].getAttribute("data-key");
           break;
         }
       }
 
-      $.getScript('//maps.google.com/maps/api/js?'+ ( key ? 'key='+ key + '&' : '' ) +'sensor=false&libraries=geometry,places&v=quarterly', function () {
+      $.getScript('//maps.google.com/maps/api/js?' + (key ? 'key=' + key + '&' : '') + 'sensor=false&libraries=geometry,places&v=quarterly', function () {
         var head = document.getElementsByTagName('head')[0],
           insertBefore = head.insertBefore;
 
@@ -750,7 +750,7 @@
             zoom: zoom,
             styles: styles,
             scrollwheel: false,
-            center: {lat: 0, lng: 0}
+            center: { lat: 0, lng: 0 }
           });
 
           // Add map object to map node
@@ -767,11 +767,11 @@
           // Add markers from google-map-markers array
           var markerItems = plugins.maps[i].querySelectorAll(".google-map-markers li");
 
-          if (markerItems.length){
+          if (markerItems.length) {
             var markers = [];
-            for (var j = 0; j < markerItems.length; j++){
+            for (var j = 0; j < markerItems.length; j++) {
               var markerElement = markerItems[j];
-              getLatLngObject(markerElement.getAttribute("data-location"), markerElement, plugins.maps[i], function(location, markerElement, mapElement){
+              getLatLngObject(markerElement.getAttribute("data-location"), markerElement, plugins.maps[i], function (location, markerElement, mapElement) {
                 var icon = markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon");
                 var activeIcon = markerElement.getAttribute("data-icon-active") || mapElement.getAttribute("data-icon-active");
                 var info = markerElement.getAttribute("data-description") || "";
@@ -783,15 +783,15 @@
                   position: location,
                   map: mapElement.map
                 }
-                if (icon){
+                if (icon) {
                   markerData.icon = icon;
                 }
                 var marker = new google.maps.Marker(markerData);
                 markerElement.gmarker = marker;
-                markers.push({markerElement: markerElement, infoWindow: infoWindow});
+                markers.push({ markerElement: markerElement, infoWindow: infoWindow });
                 marker.isActive = false;
                 // Handle infoWindow close click
-                google.maps.event.addListener(infoWindow,'closeclick',(function(markerElement, mapElement){
+                google.maps.event.addListener(infoWindow, 'closeclick', (function (markerElement, mapElement) {
                   var markerIcon = null;
                   markerElement.gmarker.isActive = false;
                   markerIcon = markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon");
@@ -800,16 +800,16 @@
 
 
                 // Set marker active on Click and open infoWindow
-                google.maps.event.addListener(marker, 'click', (function(markerElement, mapElement) {
+                google.maps.event.addListener(marker, 'click', (function (markerElement, mapElement) {
                   if (markerElement.infoWindow.getContent().length === 0) return;
                   var gMarker, currentMarker = markerElement.gmarker, currentInfoWindow;
-                  for (var k =0; k < markers.length; k++){
+                  for (var k = 0; k < markers.length; k++) {
                     var markerIcon;
-                    if (markers[k].markerElement === markerElement){
+                    if (markers[k].markerElement === markerElement) {
                       currentInfoWindow = markers[k].infoWindow;
                     }
                     gMarker = markers[k].markerElement.gmarker;
-                    if (gMarker.isActive && markers[k].markerElement !== markerElement){
+                    if (gMarker.isActive && markers[k].markerElement !== markerElement) {
                       gMarker.isActive = false;
                       markerIcon = markers[k].markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon")
                       gMarker.setIcon(markerIcon);
@@ -819,13 +819,13 @@
 
                   currentMarker.isActive = !currentMarker.isActive;
                   if (currentMarker.isActive) {
-                    if (markerIcon = markerElement.getAttribute("data-icon-active") || mapElement.getAttribute("data-icon-active")){
+                    if (markerIcon = markerElement.getAttribute("data-icon-active") || mapElement.getAttribute("data-icon-active")) {
                       currentMarker.setIcon(markerIcon);
                     }
 
                     currentInfoWindow.open(map, marker);
-                  }else{
-                    if (markerIcon = markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon")){
+                  } else {
+                    if (markerIcon = markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon")) {
                       currentMarker.setIcon(markerIcon);
                     }
                     currentInfoWindow.close();
@@ -919,19 +919,19 @@
           }, bootstrapTab));
         }
 
-        var tabs = plugins.bootstrapTabs[i].querySelectorAll( '.nav li a' );
+        var tabs = plugins.bootstrapTabs[i].querySelectorAll('.nav li a');
 
-        for ( var t = 0; t < tabs.length; t++ ) {
-          var tab = tabs[ t ];
+        for (var t = 0; t < tabs.length; t++) {
+          var tab = tabs[t];
 
-          if ( t === 0 ) {
-            tab.parentElement.classList.remove( 'active' );
-            $( tab ).tab( 'show' );
+          if (t === 0) {
+            tab.parentElement.classList.remove('active');
+            $(tab).tab('show');
           }
 
-          tab.addEventListener( 'click', function( event ) {
+          tab.addEventListener('click', function (event) {
             event.preventDefault();
-            $( this ).tab( 'show' );
+            $(this).tab('show');
           });
         }
       }
@@ -955,8 +955,8 @@
     }
 
     // Google maps
-    if( plugins.maps.length ) {
-      lazyInit( plugins.maps, initMaps );
+    if (plugins.maps.length) {
+      lazyInit(plugins.maps, initMaps);
     }
 
     // UI To Top
@@ -968,26 +968,26 @@
     }
 
     // RD Navbar
-    if ( plugins.rdNavbar.length ) {
+    if (plugins.rdNavbar.length) {
       var
         navbar = plugins.rdNavbar,
         aliases = { '-': 0, '-sm-': 576, '-md-': 768, '-lg-': 992, '-xl-': 1200, '-xxl-': 1600 },
         responsive = {};
 
-      for ( var alias in aliases ) {
-        var link = responsive[ aliases[ alias ] ] = {};
-        if ( navbar.attr( 'data'+ alias +'layout' ) )          link.layout        = navbar.attr( 'data'+ alias +'layout' );
-        if ( navbar.attr( 'data'+ alias +'device-layout' ) )   link.deviceLayout  = navbar.attr( 'data'+ alias +'device-layout' );
-        if ( navbar.attr( 'data'+ alias +'hover-on' ) )        link.focusOnHover  = navbar.attr( 'data'+ alias +'hover-on' ) === 'true';
-        if ( navbar.attr( 'data'+ alias +'auto-height' ) )     link.autoHeight    = navbar.attr( 'data'+ alias +'auto-height' ) === 'true';
-        if ( navbar.attr( 'data'+ alias +'stick-up-offset' ) ) link.stickUpOffset = navbar.attr( 'data'+ alias +'stick-up-offset' );
-        if ( navbar.attr( 'data'+ alias +'stick-up' ) )        link.stickUp       = navbar.attr( 'data'+ alias +'stick-up' ) === 'true';
-        else if ( navbar.attr( 'data'+ alias +'stick-up' ) )   link.stickUp       = navbar.attr( 'data'+ alias +'stick-up' ) === 'true';
+      for (var alias in aliases) {
+        var link = responsive[aliases[alias]] = {};
+        if (navbar.attr('data' + alias + 'layout')) link.layout = navbar.attr('data' + alias + 'layout');
+        if (navbar.attr('data' + alias + 'device-layout')) link.deviceLayout = navbar.attr('data' + alias + 'device-layout');
+        if (navbar.attr('data' + alias + 'hover-on')) link.focusOnHover = navbar.attr('data' + alias + 'hover-on') === 'true';
+        if (navbar.attr('data' + alias + 'auto-height')) link.autoHeight = navbar.attr('data' + alias + 'auto-height') === 'true';
+        if (navbar.attr('data' + alias + 'stick-up-offset')) link.stickUpOffset = navbar.attr('data' + alias + 'stick-up-offset');
+        if (navbar.attr('data' + alias + 'stick-up')) link.stickUp = navbar.attr('data' + alias + 'stick-up') === 'true';
+        else if (navbar.attr('data' + alias + 'stick-up')) link.stickUp = navbar.attr('data' + alias + 'stick-up') === 'true';
       }
 
       plugins.rdNavbar.RDNavbar({
         anchorNav: true,
-        stickUpClone: ( plugins.rdNavbar.attr("data-stick-up-clone") ) ? plugins.rdNavbar.attr("data-stick-up-clone") === 'true' : false,
+        stickUpClone: (plugins.rdNavbar.attr("data-stick-up-clone")) ? plugins.rdNavbar.attr("data-stick-up-clone") === 'true' : false,
         responsive: responsive,
         autoHeight: false,
         callbacks: {
@@ -1016,10 +1016,10 @@
       });
 
       var currentScroll = 0;
-      $window.scroll( function(event) {
+      $window.scroll(function (event) {
         var nextScroll = $(this).scrollTop();
 
-        if ( nextScroll > currentScroll ) {
+        if (nextScroll > currentScroll) {
           plugins.rdNavbar.addClass('scroll-bottom');
         } else {
           plugins.rdNavbar.removeClass('scroll-bottom');
@@ -1143,47 +1143,47 @@
           sliderMarkup = plugins.swiper[i],
           swiper,
           options = {
-            loop: sliderMarkup.getAttribute( 'data-loop' ) === 'true' || false,
-            effect: isIE ? 'slide' : sliderMarkup.getAttribute( 'data-effect' ) || 'slide',
-            direction: sliderMarkup.getAttribute( 'data-direction' ) || 'horizontal',
-            speed: sliderMarkup.getAttribute( 'data-speed' ) ? Number( sliderMarkup.getAttribute( 'data-speed' ) ) : 1000,
+            loop: sliderMarkup.getAttribute('data-loop') === 'true' || false,
+            effect: isIE ? 'slide' : sliderMarkup.getAttribute('data-effect') || 'slide',
+            direction: sliderMarkup.getAttribute('data-direction') || 'horizontal',
+            speed: sliderMarkup.getAttribute('data-speed') ? Number(sliderMarkup.getAttribute('data-speed')) : 1000,
             allowTouchMove: false,
             preventIntercationOnTransition: true,
             runCallbacksOnInit: false,
-            separateCaptions: sliderMarkup.getAttribute( 'data-separate-captions' ) === 'true' || false
+            separateCaptions: sliderMarkup.getAttribute('data-separate-captions') === 'true' || false
           };
 
-        if ( sliderMarkup.getAttribute( 'data-autoplay' ) ) {
+        if (sliderMarkup.getAttribute('data-autoplay')) {
           options.autoplay = {
-            delay: Number( sliderMarkup.getAttribute( 'data-autoplay' ) ) || 3000,
+            delay: Number(sliderMarkup.getAttribute('data-autoplay')) || 3000,
             stopOnLastSlide: false,
             disableOnInteraction: true,
             reverseDirection: false,
           };
         }
 
-        if ( sliderMarkup.getAttribute( 'data-keyboard' ) === 'true' ) {
+        if (sliderMarkup.getAttribute('data-keyboard') === 'true') {
           options.keyboard = {
-            enabled: sliderMarkup.getAttribute( 'data-keyboard' ) === 'true',
+            enabled: sliderMarkup.getAttribute('data-keyboard') === 'true',
             onlyInViewport: true
           };
         }
 
-        if ( sliderMarkup.getAttribute( 'data-mousewheel' ) === 'true' ) {
+        if (sliderMarkup.getAttribute('data-mousewheel') === 'true') {
           options.mousewheel = {
             releaseOnEdges: true,
             sensitivity: .1
           };
         }
 
-        if ( sliderMarkup.querySelector( '.swiper-button-next, .swiper-button-prev' ) ) {
+        if (sliderMarkup.querySelector('.swiper-button-next, .swiper-button-prev')) {
           options.navigation = {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
           };
         }
 
-        if ( sliderMarkup.querySelector( '.swiper-pagination' ) ) {
+        if (sliderMarkup.querySelector('.swiper-pagination')) {
           options.pagination = {
             el: '.swiper-pagination',
             type: 'bullets',
@@ -1191,7 +1191,7 @@
           };
         }
 
-        if ( sliderMarkup.querySelector( '.swiper-scrollbar' ) ) {
+        if (sliderMarkup.querySelector('.swiper-scrollbar')) {
           options.scrollbar = {
             el: '.swiper-scrollbar',
             hide: true,
@@ -1201,18 +1201,18 @@
 
         options.on = {
           init: function () {
-            setBackgrounds( this );
-            setRealPrevious( this );
-            initCaptionAnimate( this );
+            setBackgrounds(this);
+            setRealPrevious(this);
+            initCaptionAnimate(this);
 
             // Real Previous Index must be set recent
-            this.on( 'slideChangeTransitionEnd', function () {
-              setRealPrevious( this );
+            this.on('slideChangeTransitionEnd', function () {
+              setRealPrevious(this);
             });
           }
         };
 
-        swiper = new Swiper ( plugins.swiper[i], options );
+        swiper = new Swiper(plugins.swiper[i], options);
       }
     }
 
@@ -1236,7 +1236,7 @@
         $mailchimpItem.attr('novalidate', 'true');
         $email.attr('name', 'EMAIL');
 
-        $mailchimpItem.on('submit', $.proxy( function ( $email, event ) {
+        $mailchimpItem.on('submit', $.proxy(function ($email, event) {
           event.preventDefault();
 
           var $this = this;
@@ -1264,8 +1264,8 @@
             success: function (resp) {
               $output.html(resp.msg).addClass('active');
               $email[0].value = '';
-              var $label = $('[for="'+ $email.attr( 'id' ) +'"]');
-              if ( $label.length ) $label.removeClass( 'focus not-empty' );
+              var $label = $('[for="' + $email.attr('id') + '"]');
+              if ($label.length) $label.removeClass('focus not-empty');
 
               setTimeout(function () {
                 $output.removeClass("active");
@@ -1302,7 +1302,7 @@
               })();
 
               // Stop request if builder or inputs are invalide
-              if ( !isValidated )
+              if (!isValidated)
                 return false;
 
               $output.html('Submitting...').addClass('active');
@@ -1310,7 +1310,7 @@
           });
 
           return false;
-        }, $mailchimpItem, $email ));
+        }, $mailchimpItem, $email));
       }
     }
 
@@ -1361,8 +1361,8 @@
           var inputs = $this[0].getElementsByTagName('input');
           for (var i = 0; i < inputs.length; i++) {
             inputs[i].value = '';
-            var label = document.querySelector( '[for="'+ inputs[i].getAttribute( 'id' ) +'"]' );
-            if( label ) label.classList.remove( 'focus', 'not-empty' );
+            var label = document.querySelector('[for="' + inputs[i].getAttribute('id') + '"]');
+            if (label) label.classList.remove('focus', 'not-empty');
           }
 
           return false;
@@ -1416,7 +1416,7 @@
                 $.ajax({
                   method: "POST",
                   url: "bat/reCaptcha.php",
-                  data: {'g-recaptcha-response': captchaToken},
+                  data: { 'g-recaptcha-response': captchaToken },
                   async: false
                 })
                   .done(function (responceCode) {
@@ -1519,17 +1519,17 @@
     }
 
     // Select 2
-    if ( plugins.selectFilter.length ) {
-      for ( var i = 0; i < plugins.selectFilter.length; i++ ) {
-        var select = $( plugins.selectFilter[ i ] );
+    if (plugins.selectFilter.length) {
+      for (var i = 0; i < plugins.selectFilter.length; i++) {
+        var select = $(plugins.selectFilter[i]);
 
-        select.select2( {
-          dropdownParent:          $( '.page' ),
-          placeholder:             select.attr( 'data-placeholder' ) || null,
-          minimumResultsForSearch: select.attr( 'data-minimum-results-search' ) || Infinity,
-          containerCssClass:       select.attr( 'data-container-class' ) || null,
-          dropdownCssClass:        select.attr( 'data-dropdown-class' ) || null
-        } );
+        select.select2({
+          dropdownParent: $('.page'),
+          placeholder: select.attr('data-placeholder') || null,
+          minimumResultsForSearch: select.attr('data-minimum-results-search') || Infinity,
+          containerCssClass: select.attr('data-container-class') || null,
+          dropdownCssClass: select.attr('data-dropdown-class') || null
+        });
       }
     }
 
@@ -1561,16 +1561,16 @@
     }
 
     // Countdown
-    if ( plugins.countdown.length ) {
-      for ( var i = 0; i < plugins.countdown.length; i++) {
+    if (plugins.countdown.length) {
+      for (var i = 0; i < plugins.countdown.length; i++) {
         var
           node = plugins.countdown[i],
           countdown = aCountdown({
-            node:  node,
-            from:  node.getAttribute( 'data-from' ),
-            to:    node.getAttribute( 'data-to' ),
-            count: node.getAttribute( 'data-count' ),
-            tick:  100,
+            node: node,
+            from: node.getAttribute('data-from'),
+            to: node.getAttribute('data-to'),
+            count: node.getAttribute('data-count'),
+            tick: 100,
           });
       }
     }
@@ -1646,17 +1646,19 @@
     }
 
     // Material Parallax
-    if ( plugins.materialParallax.length ) {
-      if ( !isIE && !isMobile) {
+    if (plugins.materialParallax.length) {
+      if (!isIE && !isMobile) {
         plugins.materialParallax.parallax();
       } else {
-        for ( var i = 0; i < plugins.materialParallax.length; i++ ) {
+        for (var i = 0; i < plugins.materialParallax.length; i++) {
           var $parallax = $(plugins.materialParallax[i]);
 
-          $parallax.addClass( 'parallax-disabled' );
-          $parallax.css({ "background-image": 'url('+ $parallax.data("parallax-img") +')' });
+          $parallax.addClass('parallax-disabled');
+          $parallax.css({ "background-image": 'url(' + $parallax.data("parallax-img") + ')' });
         }
       }
     }
   });
 }());
+
+

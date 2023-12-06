@@ -1074,7 +1074,7 @@ html [class*='section-'].section-bottom-0 {
 }
 
 .bg-default {
-	background-color: #ffffff;
+	background-color: beige;
 }
 
 .bg-default:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
@@ -9149,11 +9149,11 @@ button.swiper-pagination-bullet {
 	}
 }
 
-.tab-content {
+/* .tab-content {
 	position: relative;
 	padding: 10px;
 	background-color: #f4f2ee;
-}
+} */
 
 .tab-pane {
 	padding: 0 15px;
@@ -9208,19 +9208,19 @@ button.swiper-pagination-bullet {
 	transition-delay: .95s;
 }
 
-.tab-content > .tab-pane {
+/* .tab-content > .tab-pane {
 	display: block;
 	visibility: hidden;
 	height: 0;
 	overflow: hidden;
-}
+} */
 
-.tab-content > .active {
+/* .tab-content > .active {
 	display: block;
 	visibility: visible;
 	height: auto;
 	overflow: visible;
-}
+} */
 
 * + .tabs-custom {
 	margin-top: 30px;
@@ -9233,11 +9233,11 @@ button.swiper-pagination-bullet {
 	}
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 	.tab-content {
 		padding: 20px;
 	}
-}
+} */
 
 @media (min-width: 992px) {
 	.tab-pane.active {
@@ -9268,9 +9268,9 @@ button.swiper-pagination-bullet {
 		padding: 29px 12px;
 		width: 279px;
 	}
-	.tabs-vertical.tabs-custom .tab-content {
+	/* .tabs-vertical.tabs-custom .tab-content {
 		margin-left: 97px;
-	}
+	} */
 }
 
 /** @section Panel custom */
