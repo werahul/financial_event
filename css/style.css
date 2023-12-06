@@ -920,7 +920,7 @@ label {
 }
 
 .schedule-wrap {
-	padding: 0 80px;
+	padding: 0 40px;
 }
 
 .schedule-tabs .nav-tabs {
@@ -1364,7 +1364,7 @@ label {
 }
 
 .conference-wrap {
-	background: #fff;
+	background: #ddd8d8;
 	padding: 60px 40px 80px;
 	box-shadow: 0px 2px 26.97px 2.03px rgba(134, 134, 134, 0.09);
 }
@@ -1417,7 +1417,7 @@ label {
 
 .conference-wrap .table-bordered td,
 .conference-wrap .table-bordered th {
-	border: 1px solid #ebebeb;
+	border: 1px solid #000000;
 }
 
 .conference-wrap .table thead th {
@@ -1444,14 +1444,14 @@ label {
 	height: 50px;
 	line-height: 44px;
 	text-align: center;
-	border: 3px solid #e8e8e8;
+	border: 1px solid #000000;
 	color: #3d3d3d;
 	cursor: pointer;
 }
 
 .datepicker-form .form-control {
 	height: 50px;
-	border: 3px solid #e8e8e8;
+	border: 1px solid #000000;
 	background: transparent;
 	border-right: none;
 	border-radius: 0;
@@ -2719,7 +2719,7 @@ blockquote::before {
 .mainText{
 	color: white;
 	padding: 0 80px;
-	margin: 20px auto;
+	margin: 20px 0px;
 
 }
 
@@ -2727,5 +2727,27 @@ blockquote::before {
 	margin-bottom: 80px;
 }
 .spaceAround{
-	padding: 60px 100px;
+	padding: 60px 60px;
 }
+.spaceAround img{
+	width: 250px;
+}
+.speakerSection{
+	background-color: white;
+	background-image: url(/newImages/bgGra.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: auto;
+	padding: 60px 80px;
+}
+.custom-section {
+	padding: 50px 0;
+	background-color: #f8f9fa;
+	box-shadow: 2px 3px 3px gray;
+  }
+
+  .custom-section img {
+	max-width: 100%;
+	height: auto;
+  }
