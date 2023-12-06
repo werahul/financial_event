@@ -344,6 +344,12 @@ ul.navbar-nav {
 	background-image: none;
 	padding-top: 20px;
 }
+.spaceAround{
+padding: 20px 10px;
+}
+.faq-bg {
+	padding: 20px 10px;
+}
 .navbar-icon {
 	background: #fff;
 	height: 3px;

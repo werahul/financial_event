@@ -571,7 +571,7 @@ label {
 
 /* 4. Banner */
 .banner-bg {
-	background-image: url(../newImages/bgGra.jpg);
+	background-image: url(../newImages);
 	height: 940px;
 	background-size: cover;
 	background-position: center;
