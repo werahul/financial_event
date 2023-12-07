@@ -11,34 +11,43 @@ $(window).on('load', function () {
 	wowanimation();
 });
 
-
+$('.main-menu nav ul').onePageNav({
+	currentClass: 'active',
+	scrollOffset: top_offset,
+});
 // One Page Nav
 var top_offset = $('.header-area').height() + 80;
-$('.main-menu nav ul').onePageNav({
+$('.main-menu nav .navbar-toggler').onePageNav({
 	currentClass: 'active',
 	scrollOffset: top_offset,
 });
 
 
 // menu toggle
-$(".navbar-toggle").on('click', function () {
-	$(".navbar-nav").addClass("mobile_menu");
-});
-$(".navbar-nav li a").on('click', function () {
+$(".navbar-toggler").on('click', function () {
+	$(".navbar-nav").toggleClass("mobile_menu");
+  });
+  
+  // Close mobile menu when a link is clicked
+  $(".navbar-nav li a").on('click', function () {
 	$(".navbar-collapse").removeClass("show");
-});
-
-
-// sticky-menu
-$(window).on('scroll', function () {
+  });
+  
+  // sticky-menu
+  $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
-	if (scroll < 100) {
-		$("#header-sticky").removeClass("sticky-menu");
+	if (scroll >= 100) {
+	  $("#header-sticky").addClass("sticky-menu");
 	} else {
-		$("#header-sticky").addClass("sticky-menu mobile_menu" );
+	  $("#header-sticky").removeClass("sticky-menu");
 	}
-});
-
+  });
+  
+  // Ensure the hamburger button is always visible
+  $(document).ready(function () {
+	$(".navbar-toggler").removeClass("d-none"); // Remove the class that hides the button
+  });
+  
 
 // countdown
 $('[data-countdown]').each(function () {
