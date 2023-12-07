@@ -433,7 +433,7 @@ html [class*='section-'].section-bottom-0 {
 		padding: 110px 0;
 	}
 	.section-lg {
-		padding: 120px 0;
+		padding: 40px 0;
 	}
 }
 
@@ -1276,7 +1276,7 @@ body {
 h1, h2, h3, h4, h5, h6, [class^='heading-'] {
 	margin-bottom: 0;
 	text-transform: uppercase;
-	/* font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+	font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	color: #26264b;
 }
 
@@ -1537,7 +1537,7 @@ h5 + p,
 @media (min-width: 1200px) {
 	h3 + p,
 	.heading-3 + p {
-		margin-top: 40px;
+		margin-top: 15px;
 	}
 }
 
@@ -4492,7 +4492,7 @@ textarea.form-input {
 
 @media (min-width: 1200px) {
 	.testimonial-text {
-		font-size: 40px;
+		font-size: 30px;
 	}
 	* + .testimonial {
 		margin-top: 50px;

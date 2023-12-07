@@ -580,6 +580,7 @@ label {
 	align-items: center;
 	z-index: 1;
 }
+
 .faq-bg {
 	background-image: url(../newImages/bgGra.jpg);
 	height: auto;
@@ -592,7 +593,8 @@ label {
 	align-items: center;
 	z-index: 1;
 }
-.faq-bg > p{
+
+.faq-bg>p {
 	color: white;
 }
 
@@ -921,7 +923,7 @@ label {
 }
 
 .schedule-wrap {
-	padding: 0 40px;
+	padding: 0 20px;
 }
 
 .schedule-tabs .nav-tabs {
@@ -1080,6 +1082,7 @@ label {
 
 .rc-speakers-img img {
 	box-shadow: 0px 2px 8.37px 0.63px rgba(129, 129, 129, 0.37);
+	height: 100px;
 }
 
 .rc-speakers-img {
@@ -1336,6 +1339,9 @@ label {
 .cta-content h2 span {
 	color: #f7b205;
 }
+ h5 span {
+	color: #f7b205;
+}
 
 .cta-content p {
 	color: #f1f1f1;
@@ -1346,7 +1352,7 @@ label {
 
 /* 11. Conference */
 .conference-bg {
-	background-image: url(../img/bg/conference_bg.jpg);
+	/* background-image: url(../img/bg/conference_bg.jpg); */
 	background-color: #050A2E;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1365,7 +1371,7 @@ label {
 }
 
 .conference-wrap {
-	background: #ddd8d8;
+	background: #ffffff;
 	padding: 60px 40px 80px;
 	box-shadow: 0px 2px 26.97px 2.03px rgba(134, 134, 134, 0.09);
 }
@@ -1377,12 +1383,12 @@ label {
 
 .table td.con-speak-box {
 	width: 260px;
-	padding: 35px;
+	padding: 15px;
 }
 
 .con-speak-img img {
 	box-shadow: 0px 2px 6.51px 0.49px rgba(113, 30, 114, 0.23);
-	border-radius: 50%;
+	/* border-radius: 50%; */
 }
 
 .con-speak-content h5 {
@@ -2717,23 +2723,26 @@ blockquote::before {
 
 }
 
-.mainText{
+.mainText {
 	color: white;
-	padding: 0 80px;
+	padding: 0 20px;
 	margin: 20px 0px;
 
 }
 
-.marginBottom{
+.marginBottom {
 	margin-bottom: 80px;
 }
-.spaceAround{
+
+.spaceAround {
 	padding: 60px 60px;
 }
-.spaceAround img{
+
+.spaceAround img {
 	width: 250px;
 }
-.speakerSection{
+
+.speakerSection {
 	background-color: white;
 	background-image: url(/newImages/bgGra.jpg);
 	background-size: cover;
@@ -2742,13 +2751,45 @@ blockquote::before {
 	height: auto;
 	padding: 60px 80px;
 }
+
 .custom-section {
 	padding: 50px 0;
 	background-color: #f8f9fa;
 	box-shadow: 2px 3px 3px gray;
-  }
+}
 
-  .custom-section img {
+.custom-section img {
 	max-width: 100%;
 	height: auto;
+}
+
+.fontForH2{
+	font-size: 40px;
+}
+.text-black{
+	color: black;
+}
+.text-pink{
+	color: rgb(218, 13, 47);
+}
+
+.paraClass{
+	font-weight: 800;
+	font-style: italic;
+}
+
+.service-icon img{
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+.custom-select {
+    /* Add your custom styling here */
+    color: crimson; /* Text color */
+    background-color: transparent; /* Background color */
+    border: 1px solid crimson; /* Border color */
+	height: 50px;
+    border-radius: 0px; /* Border radius */
+    padding: 10px; /* Padding */
+    font-size: 16px; /* Font size */
   }
