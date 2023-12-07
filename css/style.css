@@ -1339,7 +1339,8 @@ label {
 .cta-content h2 span {
 	color: #f7b205;
 }
- h5 span {
+
+h5 span {
 	color: #f7b205;
 }
 
@@ -2763,33 +2764,45 @@ blockquote::before {
 	height: auto;
 }
 
-.fontForH2{
+.fontForH2 {
 	font-size: 40px;
 }
-.text-black{
+
+.text-black {
 	color: black;
 }
-.text-pink{
+
+.text-pink {
 	color: rgb(218, 13, 47);
 }
 
-.paraClass{
+.paraClass {
 	font-weight: 800;
 	font-style: italic;
 }
 
-.service-icon img{
+.service-icon img {
 	width: 100px;
 	margin-bottom: 10px;
 }
 
 .custom-select {
-    /* Add your custom styling here */
-    color: crimson; /* Text color */
-    background-color: transparent; /* Background color */
-    border: 1px solid crimson; /* Border color */
+	/* Add your custom styling here */
+	color: crimson;
+	/* Text color */
+	background-color: transparent;
+	/* Background color */
+	border: 1px solid crimson;
+	/* Border color */
 	height: 50px;
-    border-radius: 0px; /* Border radius */
-    padding: 10px; /* Padding */
-    font-size: 16px; /* Font size */
-  }
+	border-radius: 0px;
+	/* Border radius */
+	padding: 10px;
+	/* Padding */
+	font-size: 16px;
+	/* Font size */
+}
+
+.white-nowrap {
+	white-space: nowrap;
+}

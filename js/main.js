@@ -32,10 +32,10 @@ $(".navbar-nav li a").on('click', function () {
 // sticky-menu
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
-	if (scroll < 245) {
+	if (scroll < 100) {
 		$("#header-sticky").removeClass("sticky-menu");
 	} else {
-		$("#header-sticky").addClass("sticky-menu");
+		$("#header-sticky").addClass("sticky-menu mobile_menu" );
 	}
 });
 
