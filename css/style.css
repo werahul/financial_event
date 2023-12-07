@@ -571,7 +571,7 @@ label {
 
 /* 4. Banner */
 .banner-bg {
-	background-image: url(../newImages);
+	background-image: url(../newImages/solidBg.jpg);
 	height: 940px;
 	background-size: cover;
 	background-position: center;
@@ -582,9 +582,21 @@ label {
 }
 
 .faq-bg {
-	background-image: url(../newImages/bgGra.jpg);
+	background-image: url(../newImages/solidBg.jpg);
 	height: auto;
-	padding: 60px 120px;
+	padding: 60px 60px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 1;
+}
+.contact-bg {
+	background-image: url(../newImages/solidBg.jpg);
+	height: auto;
+	padding: 0px 60px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -605,7 +617,7 @@ label {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../newImages/bgGra.jpg);
+	background-image: url(../newImages/solidBg.jpg);
 	background-position: center;
 	background-size: cover;
 	z-index: -1;
@@ -614,7 +626,7 @@ label {
 
 .banner-bg-shape {
 	position: absolute;
-	background-image: url(../img/banner/banner_shape.png);
+	/* background-image: url(../img/); */
 	width: 1091px;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -901,7 +913,7 @@ label {
 /* 7. Scedule */
 .recent-schedule {
 	position: relative;
-	background-image: url(../newImages/bgGra.jpg);
+	background-image: url(../newImages/solidBg.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -1353,8 +1365,8 @@ h5 span {
 
 /* 11. Conference */
 .conference-bg {
-	/* background-image: url(../img/bg/conference_bg.jpg); */
-	background-color: #050A2E;
+	background-image: url(../newImages/solidBg.jpg);
+	/* background-color: #050A2E; */
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
@@ -1776,6 +1788,7 @@ h5 span {
 /* 16. Contact */
 .contact-area {
 	position: relative;
+	color: white;
 }
 
 .contact-area::before {
@@ -1785,7 +1798,7 @@ h5 span {
 	top: 0;
 	width: 49%;
 	height: 100%;
-	background: #fbfbfb;
+	background: transparent;
 	z-index: -1;
 }
 
@@ -1831,18 +1844,19 @@ h5 span {
 .contact-form textarea {
 	width: 100%;
 	border: none;
-	border-bottom: 1px solid #dddddd;
+	border-bottom: 1px solid crimson;
 	padding-bottom: 13px;
 	margin-bottom: 45px;
 	text-transform: uppercase;
-	color: #e7005c;
+	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
+	background-color: transparent;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-	color: #e7005c;
+	color: #ffffff;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
 	letter-spacing: 1px;
@@ -2398,7 +2412,7 @@ blockquote::before {
 	padding: 18px 20px;
 	border: none;
 	margin-bottom: 20px;
-	background: #f8f8f8;
+	background: #140202;
 	transition: .3s;
 }
 
@@ -2736,21 +2750,32 @@ blockquote::before {
 }
 
 .spaceAround {
-	padding: 60px 60px;
-}
-
-.spaceAround img {
-	width: 250px;
-}
-
-.speakerSection {
 	background-color: white;
-	background-image: url(/newImages/bgGra.jpg);
+	background-image: url(/newImages/solidBg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: auto;
 	padding: 60px 80px;
+	color: white;
+}
+
+.spaceAround img {
+	width: 250px;
+}
+.spaceAround p {
+	color: white;
+}
+
+.speakerSection {
+	background-color: white;
+	background-image: url(/newImages/solidBg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: auto;
+	padding: 60px 80px;
+	padding-bottom: 0;
 }
 
 .custom-section {
@@ -2788,7 +2813,7 @@ blockquote::before {
 
 .custom-select {
 	/* Add your custom styling here */
-	color: crimson;
+	color: white;
 	/* Text color */
 	background-color: transparent;
 	/* Background color */
@@ -2805,4 +2830,46 @@ blockquote::before {
 
 .white-nowrap {
 	white-space: nowrap;
+}
+
+.accordion {
+	width: 100%;
+	margin: 0px auto;
+	
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 25px;
+	color: #aca9b1;
+}
+
+.accordion-item {
+	border-bottom: 1px solid #ccc;
+}
+
+.accordion-item:last-child {
+	border-bottom: none;
+}
+
+.accordion-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.accordion-content {
+	display: none;
+	padding: 15px;
+	background-color: transparent;
+}
+
+.accordion-item.active .accordion-content {
+	display: block;
+}
+
+.rowGap-50{
+	row-gap: 50px;
 }

@@ -334,6 +334,12 @@ ul.navbar-nav {
 .mainText{
 	padding: 0 20px;
 }
+.accordion {
+	width: 100%;
+	
+	font-size: 14px;
+	
+}
 .speakerSection{
 	padding: 20px 20px;
 }
@@ -341,8 +347,20 @@ ul.navbar-nav {
 	padding: 20px 0;
 }
 .conference-bg{
-	background-image: none;
+	background-image: url(/newImages/solidBg.jpg);
 	padding-top: 20px;
+}
+.contact-bg {
+	background-image: url(../newImages/solidBg.jpg);
+	height: auto;
+	padding: 0px 10px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 1;
 }
 .spaceAround{
 padding: 20px 10px;
