@@ -593,6 +593,7 @@ label {
 	align-items: center;
 	z-index: 1;
 }
+
 .contact-bg {
 	background-image: url(../newImages/solidBg.jpg);
 	height: auto;
@@ -643,7 +644,7 @@ label {
 }
 
 .banner-content h2 {
-	font-size: 80px;
+	font-size: 41px;
 	color: #fff;
 	text-transform: uppercase;
 	font-style: italic;
@@ -659,7 +660,7 @@ label {
 .coming-time {
 	display: flex;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .coming-time .time-count {
@@ -2763,6 +2764,7 @@ blockquote::before {
 .spaceAround img {
 	width: 250px;
 }
+
 .spaceAround p {
 	color: white;
 }
@@ -2835,7 +2837,7 @@ blockquote::before {
 .accordion {
 	width: 100%;
 	margin: 0px auto;
-	
+
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
 	font-style: normal;
@@ -2870,6 +2872,221 @@ blockquote::before {
 	display: block;
 }
 
-.rowGap-50{
+.rowGap-50 {
 	row-gap: 50px;
+}
+
+/* Contact section */
+
+.contact-body {
+	background-color: transparent;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh; */
+}
+
+.form-container {
+	background-color: beige;
+	padding: 40px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	/* height: 400px; */
+	/* text-align: center; */
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	border: 2px solid crimson;
+	border-radius: 12px;
+	font-size: 16px;
+	color: crimson;
+	background: transparent;
+}
+
+::placeholder {
+	color: crimson;
+	opacity: 1;
+	/* Firefox */
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	grid-column-gap: 50px;
+}
+
+.grid-item {
+	grid-column: span 1;
+}
+
+input[type="radio"] {
+	margin-right: 5px;
+	margin-bottom: 0px;
+}
+
+.radio-label {
+	display: flex;
+	align-items: center;
+}
+
+.cool-button {
+	background-color: crimson;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.cool-button:hover {
+	background-color: rgb(197, 85, 107);
+}
+
+.flex-item {
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: start;
+	align-items: center;
+	gap: 145px;
+}
+
+/* Styling for the radio buttons */
+
+
+.flex-item div {
+	display: flex;
+	align-items: center;
+}
+
+input[type="radio"] {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid crimson;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked {
+	background-color: crimson;
+	border-color: crimson;
+}
+
+.radio-label {
+	font-size: 13px;
+	color: #000000;
+}
+
+/* Custom styling for the labels */
+.radio-label::before {
+	/* content: ""; Use a solid circle bullet point as a checkmark */
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 10px;
+	color: transparent;
+	background-color: #fff;
+	border: 2px solid crimson;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+input[type="radio"]:checked+.radio-label::before {
+	color: crimson;
+	background-color: #fff;
+}
+
+.alignCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.customText {
+	color: crimson;
+	font-weight: 800;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+label {
+	color: crimson;
+}
+
+/* Add this to your existing CSS or in a style tag in the head */
+#popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+.popup-content {
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	/* text-align: center; */
+}
+
+#closePopup {
+	background-color: transparent;
+	color: #007BFF;
+	border: none;
+	/* padding: 10px 20px; */
+	cursor: pointer;
+	/* border-radius: 5px; */
+	margin-top: 10px;
+
+}
+
+#closePopup:hover {
+	text-decoration: underline;
+}
+.centertext{
+	text-align: center;
+}
+
+.textTransform{
+	text-transform: capitalize;
+}
+.mycolor{
+	font-size: 20px;
+	color: #f7b205;
+	padding-bottom: 15px;
+}
+.pb5{
+	padding-bottom: 15px;
+}
+.foot-anchor-link{
+	color: white;
 }

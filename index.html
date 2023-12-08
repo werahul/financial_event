@@ -33,6 +33,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+
+
+
 </head>
 
 <body>
@@ -67,7 +70,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item   "><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#events">EVENTS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#speakers">SPEAKERS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#schedule">SCHEDULE</a></li>
@@ -84,9 +87,9 @@
     </div>
   </header>
 
+
   <!-- main-area -->
   <main>
-
     <!-- banner-area -->
     <section id="home" class="banner-area banner-bg fix">
       <div class="banner-bg-shape"></div>
@@ -98,18 +101,18 @@
               <h2 class="wow fadeInUp fontBold " data-wow-delay="0.4s">Nurturing Financial Success for
                 <span> <br>NRI's Worldwide</span>
                 </>
-                <h5 class="text-white pb-40">Delivering financial services in India to cater to the needs and
+                <h5 class="text-white pb5 textTransform">Delivering financial services in India to cater to the needs
+                  and
                   requirements of NRIs for over two
                   decades
-                  <br>
-                  <span> Served 500+ NRIs | Across 20+ Counties | Experience of 20+ Years</span>
                 </h5>
-                <div class="text-white"> Ahmedabad</div>
-                <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/22"></div>
+                <p class="textTransform mycolor"> Served 500+ NRIs | Across 20+ Counties | Experience of 20+ Years</>
                 <div class="text-white"> Vadodara</div>
                 <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/23"></div>
+                <div class="text-white">Ahmedabad </div>
+                <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/24"></div>
                 <!-- <a   class="btn wow fadeInUp marginBottom_Register data-wow-delay="0.8s">BUY TICKET</a> -->
-                <a class="btn rc-event-btn" href="#">Register Now</a>
+                <button class="btn rc-event-btn">Register Now</button>
             </div>
           </div>
           <div class="col-xl-5 col-lg-6 d-none d-lg-block">
@@ -121,8 +124,57 @@
       </div>
       <div class="banner-shape"><img src="img/shape/dot_circle.png" class="rotateme" alt="img"></div>
     </section>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <!-- Your popup content goes here -->
+        <form class="form-container" id="contact-form" onsubmit="sendEmail(this); return false;">
+          <div class="customText">Contact Us</div>
+          <div class=" grid-container">
+            <div class="form-group">
+              <!-- <label for="name">Name:</label> -->
+              <input type="text" id="name" name="from_name" placeholder="Name" required>
+            </div>
+
+            <div class="form-group">
+              <!-- <label for="email">Email:</label> -->
+              <input type="email" id="email" name="from_email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+              <!-- <label for="mobile">Mobile No.:</label> -->
+              <input type="tel" id="mobile" name="from_mobile" placeholder="Whatsapp no." required>
+            </div>
+
+            <div class="form-group">
+              <!-- <label>Yes or No:</label> -->
+              <label for="yesno"> Do you have any relatives who are NRIs?</label>
+              <div class="grid-container">
+
+                <div class="flex-item">
+
+                  <div class="">
+                    <input type="radio" id="yes" name="yesno" value="yes">
+                    <label class="radio-label" for="yes">Yes</label>
+                  </div>
+                  <div class="">
+                    <input type="radio" id="no" name="yesno" value="no">
+                    <label class="radio-label" for="no">No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="alignCenter">
+            <button type="submit" class="cool-button">Submit</button>
+          </div>
+        </form>
+        <div class="centertext">
+          <button id="closePopup">Skip for later</button>
+        </div>
+      </div>
+    </div>
     <!-- recent-schedule -->
-    <section class="recent-schedule pt-20">
+    <section id="events" class="recent-schedule pt-20">
 
       <div class="container">
         <div class="row">
@@ -158,16 +210,16 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item">
                     <a class="nav-link active" id="schedule-one-tab" data-toggle="tab" href="#schedule-one" role="tab"
-                      aria-controls="schedule-one" aria-selected="true"> December-22-2023
-                      <p class="text-right paraClass text-pink">Ahmedabad</p>
+                      aria-controls="schedule-one" aria-selected="true"> December-23-2023
+                      <p class="text-right paraClass text-pink">Vadodara</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
 
                     <a class="nav-link" id="schedule-two-tab" data-toggle="tab" href="#schedule-two" role="tab"
-                      aria-controls="schedule-two" aria-selected="false">December-23-2023
-                      <p class="text-right paraClass text-pink">Vadodara</p>
+                      aria-controls="schedule-two" aria-selected="false">December-24-2023
+                      <p class="text-right paraClass text-pink">Ahmedabad</p>
                     </a>
 
                   </li>
@@ -183,20 +235,22 @@
                     aria-labelledby="schedule-one-tab">
 
                     <div class="rc-schedule-content">
-                      <h2>Finance Fusion <span>Ahmedabad</span></h2>
+                      <h2>Finance Fusion <span>Vadodara </span></h2>
                       <div class="rc-schedule-meta mb-20">
                         <ul>
                           <!-- <li><i class="far fa-user"></i><a  >Admin</a></li> -->
-                          <li><i class="far fa-clock"></i>December 22, 2023, | <span class="text-pink"> 10:30 AM IST
+                          <li><i class="far fa-clock"></i>December 23, 2023, | <span class="text-pink"> 04:30 PM IST
                               Onwards
                             </span> </li>
                           <li><i class="fas fa-map-marker-alt"></i>Hotel Fairfield by Marriott, Alkapuri</li>
                         </ul>
                       </div>
-                      <p>Mark your calendar on 22nd December 2023, Friday, as we bring valuable financial insights to
-                        Ahmedabad for you and your NRI connections. At this EVENT, gain a deep understanding of Indian
-                        taxation, investment opportunities, financial regulations for NRIs, and prospects in GIFT
-                        City—all in one place. Don't search elsewhere for your financial concerns.
+                      <p>Save the date for December 23, 2023, Saturday, as we bring essential financial insights to
+                        Vadodara for you and your NRI connections. Attend this special EVENT to delve into Indian
+                        taxation, investment opportunities, financial regulations for NRIs, and the promising prospects
+                        in GIFT City—all under one roof. Spare yourself from searching for financial solutions
+                        elsewhere. Join us and elevate your financial journey!
+
                       </p>
                       <p>Join us and empower your financial journey!</p>
 
@@ -204,7 +258,7 @@
                     </div>
                     <div class="rc-schedule-speakers fix">
                       <div class="rc-speakers-img">
-                        <img src="newImages/newBanner.jpeg" alt="img">
+                        <!-- <img src="newImages/newBanner.jpeg" alt="img"> -->
                       </div>
                       <!-- <div class="rc-speakers-info">
                         <h3>thomas johnson</h3>
@@ -224,26 +278,27 @@
                   <div class="tab-pane fade" id="schedule-two" role="tabpanel" aria-labelledby="schedule-two-tab">
 
                     <div class="rc-schedule-content">
-                      <h2>Finance Fusion <span>Vadodara</span></h2>
+                      <h2>Finance Fusion <span>Ahmedabad </span></h2>
                       <div class="rc-schedule-meta mb-20">
                         <ul>
-                          <li><i class="far fa-clock"></i>December 23, 2023 | <span class="text-pink">04:30 PM IST
+                          <li><i class="far fa-clock"></i>December 23, 2023 | <span class="text-pink">10:30 AM IST
                               Onwards
                             </span></li>
                           <li><i class="fas fa-map-marker-alt"></i>Hotel Crowne Plaza, SG Road</li>
                         </ul>
                       </div>
-                      <p>Save the date for December 23, 2023, Saturday, as we bring essential financial insights to
-                        Vadodara for you and your NRI connections. Attend this special EVENT to delve into Indian
-                        taxation, investment opportunities, financial regulations for NRIs, and the promising prospects
-                        in GIFT City—all under one roof. Spare yourself from searching for financial solutions
-                        elsewhere.
+                      <p>Mark your calendar on 24th December 2023, Sunday, as we bring valuable financial insights to
+                        Ahmedabad for you and your NRI connections. At this EVENT, gain a deep understanding of Indian
+                        taxation, investment opportunities, financial regulations for NRIs, and prospects in GIFT
+                        City—all in one place. Don't search elsewhere for your financial concerns. Join us and empower
+                        your financial journey!
+
                       </p>
                       <p> Join us and elevate your financial journey!</p>
                     </div>
                     <div class="rc-schedule-speakers fix">
                       <div class="rc-speakers-img">
-                        <img src="newImages/sp.jpg" alt="img">
+                        <!-- <img src="newImages/sp.jpg" alt="img"> -->
                       </div>
                       <!-- <div class="rc-speakers-info">
                         <h3>thomas johnson</h3>
@@ -341,7 +396,7 @@
       </div>
     </section>
     <!-- Speaker -->
-    <section class="speakerSection">
+    <section class="speakerSection" id="speakers">
       <div class="">
         <h2 class="text-center  text-white white-nowrap  pb-40">Meet Our Speakers</h2>
       </div>
@@ -430,80 +485,9 @@
                     </tr> -->
                   </thead>
                   <tbody class="table-bordered">
+
                     <tr>
-                      <th scope="row">Ahmedabad</th>
-                      <td class="con-speak-box">
-                        <div class="single-conference-speaker">
-                          <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="jam margn">
-                          </div>
-                          <div class="con-speak-content">
-                            <h5>Introduction</h5>
-                            <span>10:30 am to 11 am</span>
-                            <!-- <p>Event definition is thing that happens occurce</p> -->
-                          </div>
-                        </div>
-                      </td>
-                      <!-- <td class="con-speak-box conference-blank"></td> -->
-                      <td class="con-speak-box">
-                        <div class="single-conference-speaker">
-                          <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Reveka Lio">
-                          </div>
-                          <div class="con-speak-content">
-                            <h5>NRI Taxation & Regulations</h5>
-                            <span>11 am to 11:45 am</span>
-                            <!-- <p>Event definition is thing that happens occurce</p> -->
-                          </div>
-                        </div>
-                      </td>
-                      <td class="con-speak-box">
-                        <div class="single-conference-speaker">
-                          <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Reveka Lio">
-                          </div>
-                          <div class="con-speak-content">
-                            <h5>NRI Investments & Insurance</h5>
-                            <span>11:45 am to 12:30 pm</span>
-                            <!-- <p>Event definition is thing that happens occurce</p> -->
-                          </div>
-                        </div>
-                      </td>
-                      <td class="con-speak-box">
-                        <div class="single-conference-speaker">
-                          <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Reveka Lio">
-                          </div>
-                          <div class="con-speak-content">
-                            <h5>Panel discussion on GIFT City</h5>
-                            <span>12:30 pm to 1:15 pm</span>
-                            <!-- <p>Event definition is thing that happens occurce</p> -->
-                          </div>
-                        </div>
-                      </td>
-                      <td class="con-speak-box">
-                        <div class="single-conference-speaker">
-                          <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Reveka Lio">
-                          </div>
-                          <div class="con-speak-content">
-                            <h5>Q&A</h5>
-                            <span>1:15 pm to 1:30 pm
-                              <br>followed by lunch
-                            </span>
-                            <p></p>
-                          </div>
-                        </div>
-                      </td>
-                      <!-- <td class="con-speak-box conference-blank"></td> -->
-                    </tr>
-                    <tr>
-                      <th scope="row">Vadodara</th>
+                      <th scope="row">Vadodara 23/12/2023</th>
                       <!-- <td class="con-speak-box conference-blank"></td> -->
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
@@ -574,6 +558,78 @@
                         </div>
                       </td>
                     </tr>
+                    <tr>
+                      <th scope="row">Ahmedabad 24/12/2023</th>
+                      <td class="con-speak-box">
+                        <div class="single-conference-speaker">
+                          <div class="con-speak-img mb-25">
+                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
+                              data-placement="right" title="jam margn">
+                          </div>
+                          <div class="con-speak-content">
+                            <h5>Introduction</h5>
+                            <span>10:30 am to 11 am</span>
+                            <!-- <p>Event definition is thing that happens occurce</p> -->
+                          </div>
+                        </div>
+                      </td>
+                      <!-- <td class="con-speak-box conference-blank"></td> -->
+                      <td class="con-speak-box">
+                        <div class="single-conference-speaker">
+                          <div class="con-speak-img mb-25">
+                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
+                              data-placement="right" title="Reveka Lio">
+                          </div>
+                          <div class="con-speak-content">
+                            <h5>NRI Taxation & Regulations</h5>
+                            <span>11 am to 11:45 am</span>
+                            <!-- <p>Event definition is thing that happens occurce</p> -->
+                          </div>
+                        </div>
+                      </td>
+                      <td class="con-speak-box">
+                        <div class="single-conference-speaker">
+                          <div class="con-speak-img mb-25">
+                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
+                              data-placement="right" title="Reveka Lio">
+                          </div>
+                          <div class="con-speak-content">
+                            <h5>NRI Investments & Insurance</h5>
+                            <span>11:45 am to 12:30 pm</span>
+                            <!-- <p>Event definition is thing that happens occurce</p> -->
+                          </div>
+                        </div>
+                      </td>
+                      <td class="con-speak-box">
+                        <div class="single-conference-speaker">
+                          <div class="con-speak-img mb-25">
+                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
+                              data-placement="right" title="Reveka Lio">
+                          </div>
+                          <div class="con-speak-content">
+                            <h5>Panel discussion on GIFT City</h5>
+                            <span>12:30 pm to 1:15 pm</span>
+                            <!-- <p>Event definition is thing that happens occurce</p> -->
+                          </div>
+                        </div>
+                      </td>
+                      <td class="con-speak-box">
+                        <div class="single-conference-speaker">
+                          <div class="con-speak-img mb-25">
+                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
+                              data-placement="right" title="Reveka Lio">
+                          </div>
+                          <div class="con-speak-content">
+                            <h5>Q&A</h5>
+                            <span>1:15 pm to 1:30 pm
+                              <br>followed by lunch
+                            </span>
+                            <p></p>
+                          </div>
+                        </div>
+                      </td>
+                      <!-- <td class="con-speak-box conference-blank"></td> -->
+                    </tr>
 
                   </tbody>
                 </table>
@@ -583,7 +639,6 @@
         </div>
       </div>
     </section>
-
     <!-- Section We Have Top Executive And Start Up Here-->
     <section class="parallax-container section" data-parallax-img="images/bg-parallax-05-1894x758.jpg">
       <div class="parallax-content section-lg context-dark text-center">
@@ -616,7 +671,6 @@
         </div>
       </div>
     </section>
-
     <section class="spaceAround">
       <div class="container">
         <div class="row justify-content-center text-center">
@@ -908,7 +962,6 @@
         </svg>
       </div>
     </section>
-
     <!--Section: FAQ-->
     <section id="faq" class="faq-bg">
       <h3 class="text-center pb-2 text-primary fw-bold">FAQ</h3>
@@ -990,11 +1043,9 @@
         </div>
       </div>
     </section>
-
-    <!--Section: FAQ-->
     <!-- contact-area -->
-    <section id="contact" class="contact-area contact-bg pt-115 pb-120">
-      <div class="container">
+    <section id="contact" class="contact-area contact-bg pt-115 pb-120 contact-body">
+      <!-- <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <div class="section-title mb-20">
@@ -1018,7 +1069,7 @@
               <form action="#">
                 <input type="text" placeholder="your name *">
                 <input type="email" placeholder="your email *">
-                <!-- <textarea name="message" id="message" placeholder="your message *"></textarea> -->
+                <textarea name="message" id="message" placeholder="your message *"></textarea>
                 <select class="form-select form-select-lg mb-3 custom-select" aria-label=".form-select-lg example"
                   id="mySelect">
                   <option selected>Open this select menu</option>
@@ -1033,7 +1084,48 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      <form class="form-container" id="contact-form" onsubmit="sendEmail(this); return false;">
+        <div class="customText">Contact Us</div>
+        <div class=" grid-container">
+          <div class="form-group">
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="name" name="from_name" placeholder="Name" required>
+          </div>
+
+          <div class="form-group">
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" id="email" name="from_email" placeholder="Email" required>
+          </div>
+
+          <div class="form-group">
+            <!-- <label for="mobile">Mobile No.:</label> -->
+            <input type="tel" id="mobile" name="from_mobile" placeholder="Whatsapp no." required>
+          </div>
+
+          <div class="form-group">
+            <!-- <label>Yes or No:</label> -->
+            <label for="yesno"> Do you have any relatives who are NRIs?</label>
+            <div class="grid-container">
+
+              <div class="flex-item">
+
+                <div class="">
+                  <input type="radio" id="yes" name="yesno" value="yes">
+                  <label class="radio-label" for="yes">Yes</label>
+                </div>
+                <div class="">
+                  <input type="radio" id="no" name="yesno" value="no">
+                  <label class="radio-label" for="no">No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alignCenter">
+          <button type="submit" class="cool-button">Submit</button>
+        </div>
+      </form>
     </section>
     <!-- Section Pre Footer-->
     <section class="section section-lg faq-bg">
@@ -1042,21 +1134,24 @@
           <div class="col-xs-10 col-lg-4 align-self-center"><a class="brand" href="index.html"><img class=""
                 src="img/logo/ashutosLogo.png" alt="ashutosh" style="width: 240px;"></a></div>
           <div class="col-xs-10 col-sm-6 col-lg-4">
-            <h5><span class="big font-weight-sbold">Event detail</span></h5>
+            <h5><span class="big font-weight-sbold">Quick Links</span></h5>
             <div class="event-detail">
-              <p class="event-detail-time big">
-                <time data-splitting datetime="2019-01-05">January 5 to 9, 2019</time>
-              </p>
-              <p class="event-detail-address big" data-splitting>66 Road Broklyn Street BNG 275 New York. United
-                States of America.</p><a class="event-detail-link" href="contact.html">View map location</a>
+              <ul class="grid-container">
+                <li class="foot_links"><a class="foot-anchor-link" href="#home">HOME</a></li>
+                <li class="foot_links"><a class="foot-anchor-link" href="#events">EVENTS</a></li>
+                <li class="foot_links"><a class="foot-anchor-link" href="#speakers">SPEAKERS</a></li>
+                <li class="foot_links"><a class="foot-anchor-link" href="#schedule">SCHEDULE</a></li>
+                <li class="foot_links"><a class="foot-anchor-link" href="#faq">FAQ</a></li>
+                <li class="foot_links"><a class="foot-anchor-link" href="#contact">Contact</a></li>
+              </ul>
             </div>
           </div>
           <div class="col-xs-10 col-sm-6 col-lg-4">
-            <h5><span class="big font-weight-sbold">Social Updates</span></h5>
+            <!-- <h5><span class="big font-weight-sbold">Social Updates</span></h5>
             <div class="event-detail">
               <p class="big">You may wonder: why this event so popular? If you do, find
                 more info about it here.
-              </p>
+              </p> -->
 
             </div>
           </div>
@@ -1067,11 +1162,6 @@
 
   </main>
   <!-- main-area-end -->
-
-
-
-
-
   <!-- JS here -->
   <script src="js/vendor/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -1094,7 +1184,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script>
+  <!-- <script>
     function basicmap() {
       // Basic options for a simple Google Map
       // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -1119,7 +1209,110 @@
     if ($('#contact-map').length != 0) {
       google.maps.event.addDomListener(window, 'load', basicmap);
     }
+  </script> -->
+  <script>
+    // Function to scroll to a specific section
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.classList.add("active")
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  
+    // Defer the execution of scrollToSection until the page has fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      var links = document.querySelectorAll('.nav-link');
+      links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          var sectionId = link.getAttribute('href').substring(1);
+          scrollToSection(sectionId);
+        });
+      });
+    });
   </script>
+  <script>
+    // Function to open the popup 5 seconds after page load
+    function openPopupAfterDelay() {
+      setTimeout(function () {
+        document.getElementById('popup').style.display = 'flex';
+      }, 5000);
+    }
+
+    // Function to open the popup
+    function openPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Attach the functions to the button and close button
+    document.querySelector('.rc-event-btn').addEventListener('click', openPopup);
+    document.getElementById('closePopup').addEventListener('click', closePopup);
+
+    // Open the popup after 5 seconds
+    window.onload = openPopupAfterDelay;
+  </script>
+
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "ai.ronycode@gmail.com",
+        Password: "93BE2A71DA4D37570F06C370935C4CC00EDA",
+        To: 'ai.ronycode@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New Event Enquiry",
+        Body: "Test mail"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script> -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('U-VYtTGVYuWBMAZwR');
+    })();
+  </script>
+  <script type="text/javascript">
+    function sendEmail(form) {
+
+      var from_name = form.from_name.value;
+      var from_email = form.from_email.value;
+      var from_mobile = form.from_mobile.value;
+      var yesno = form.yesno.value; // Assuming yesno is a radio button group
+
+      // console.log('Name: ', from_name);
+      // console.log('Email: ', from_email);
+      // console.log('Mobile: ', from_mobile);
+      // console.log('Yes/No: ', yesno);
+      // generate a five-digit number for the contact_number variable
+      // form.contact_number.value = Math.random() * 100000 | 0;
+      // these IDs from the previous steps
+
+      emailjs.sendForm('service_b33vbwq', 'template_voeo1qk', form)
+        .then(function () {
+          // console.log('SUCCESS!');
+          window.location.href = "/thankyou.html";
+          // Reset the form after successful submission
+          form.reset();
+        }, function (error) {
+          console.log('FAILED...', error);
+        });
+    }
+  </script>
+
+
+  <!-- Mailbox name not allowed. The server response was: Envelope FROM 'rahuldev.kb@gmail.com' email address not allowed. -->
 
 
   <script src="js/core.min.js"></script>

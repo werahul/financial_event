@@ -11,16 +11,16 @@
 			wowanimation();
 	});
 
-	$('.main-menu nav ul').onePageNav({
-		currentClass: 'active',
-		scrollOffset: top_offset,
-	});
+	// $('.main-menu nav ul').onePageNav({
+	// 	currentClass: 'active',
+	// 	scrollOffset: top_offset,
+	// });
 	// One Page Nav
-	var top_offset = $('.header-area').height() + 80;
-	$('.main-menu nav .navbar-toggler').onePageNav({
-		currentClass: 'active',
-		scrollOffset: top_offset,
-	});
+	// var top_offset = $('.header-area').height() + 80;
+	// $('.main-menu nav .navbar-toggler').onePageNav({
+	// 	currentClass: 'active',
+	// 	scrollOffset: top_offset,
+	// });
 
 
 	// menu toggle
@@ -111,25 +111,30 @@
 	// Acordains
 	document.addEventListener('DOMContentLoaded', function () {
 		const accordionItems = document.querySelectorAll('.accordion-item');
-	
+
 		accordionItems.forEach(function (item, index) {
-		  // Initially open the first item
-		  if (index === 0) {
-			item.classList.add('active');
-		  }
-	
-		  item.addEventListener('click', function () {
-			// Toggle active class to show/hide content
-			accordionItems.forEach(function (otherItem) {
-			  if (otherItem !== item) {
-				otherItem.classList.remove('active');
-			  }
+			// Initially open the first item
+			if (index === 0) {
+				item.classList.add('active');
+			}
+
+			item.addEventListener('click', function () {
+				// Toggle active class to show/hide content
+				accordionItems.forEach(function (otherItem) {
+					if (otherItem !== item) {
+						otherItem.classList.remove('active');
+					}
+				});
+
+				item.classList.toggle('active');
 			});
-	
-			item.classList.toggle('active');
-		  });
 		});
-	  });
+	});
+	//   popup screen
+	// Add this script at the end of your body tag or in the head
+
+	// Function to open the popup after 5 seconds
+	
 	// about-active
 	$('.about-active').slick({
 		dots: false,
