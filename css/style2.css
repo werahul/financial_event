@@ -4436,8 +4436,9 @@ textarea.form-input {
 
 .testimonial-text {
 	position: relative;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 400;
+	text-align: center;
 	line-height: 1.25;
 	color: #26264b;
 	padding: 20px;
@@ -4484,7 +4485,8 @@ textarea.form-input {
 
 @media (min-width: 992px) {
 	.testimonial-text {
-		font-size: 30px;
+		font-size: 18px;
+		text-align: center;
 	}
 	* + .testimonial-footer {
 		margin-top: 30px;
@@ -12064,6 +12066,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .parallax-container {
 	position: relative;
 	overflow: hidden;
+	background-image: url("/images/bg-parallax-05-1894x758.jpg");
 }
 
 .material-parallax {

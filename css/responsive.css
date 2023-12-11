@@ -435,6 +435,20 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
+		height: 100vh;
+	}
+	.text-section {
+		flex: 30%;
+		padding: 0px;
+		box-sizing: border-box;
+		text-align: left;
+	}
+	.fontSizeExtra{
+		font-size: 18px;
+	} 
+	.fontForH3 {
+		font-size: 32px;
+		padding-top: 10px;
 	}
 	.aboutVideo{
 		width: auto;
@@ -491,11 +505,20 @@
 	.cool-button {
 		margin-top: 20px;
 	}
-
+	.accordion-content {
+		display: none;
+		padding: 15px;
+		background-color: transparent;
+		font-size: 14px;
+	}
+	.autoPadMobile{
+		padding: 0 15px;
+	}
+	
 	.contact-bg {
-		background-image: url(../newImages/solidBg.jpg);
+		/* background-image: url(../newImages/solidBg.jpg); */
 		height: auto;
-		padding: 0px 0px;
+		padding: 10px 0px;
 		background-size: cover;
 		background-position: center;
 		position: relative;
@@ -507,6 +530,7 @@
 
 	.rc-schedule-content p {
 		color: black;
+		font-size: 18px;
 	}
 
 	.spaceAround {
