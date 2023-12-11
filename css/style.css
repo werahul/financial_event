@@ -105,7 +105,7 @@ textarea:focus {
 }
 
 .uppercase {
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 .capitalize {
@@ -338,7 +338,7 @@ label {
 	padding: 30px 0;
 	font-size: 15px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -426,7 +426,7 @@ label {
 	color: #fff;
 	font-weight: 500;
 	font-size: 18px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .contact-list p {
@@ -537,7 +537,7 @@ label {
 .breadcrumb-content h2 {
 	font-size: 45px;
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 10px;
 }
 
@@ -559,7 +559,7 @@ label {
 	display: block;
 	font-weight: 700;
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 18px;
 }
 
@@ -698,7 +698,7 @@ label {
 	color: #ebebeb;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 900;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: 1px;
 }
 
@@ -753,7 +753,7 @@ label {
 	font-size: 14px;
 	font-weight: 700;
 	color: #e7005c;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
@@ -763,7 +763,7 @@ label {
 	font-size: 40px;
 	line-height: 1;
 	margin-bottom: 0;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .about-img {
@@ -782,7 +782,7 @@ label {
 .arrow-btn {
 	color: #3d3d3d;
 	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 700;
 	letter-spacing: .5px;
 	font-size: 14px;
@@ -890,7 +890,7 @@ label {
 .services-content>span {
 	display: block;
 	font-size: 14px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 700;
 	margin-bottom: 5px;
 	font-family: 'Poppins', sans-serif;
@@ -900,7 +900,7 @@ label {
 
 .services-content h4 {
 	font-size: 26px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	line-height: 1;
 	margin-bottom: 20px;
 }
@@ -963,7 +963,7 @@ label {
 .schedule-tabs .nav-link {
 	font-size: 26px;
 	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #1c1327;
 	background: #fff;
 	border: 6px solid #e7005c;
@@ -1016,7 +1016,7 @@ label {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	color: #322b3a;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	line-height: 1;
 }
 
@@ -1038,7 +1038,7 @@ label {
 }
 
 .rc-schedule-content h2 {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	color: #1c1327;
@@ -1117,7 +1117,7 @@ label {
 }
 
 .rc-speakers-info h3 {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: 'Poppins', sans-serif;
 	font-size: 22px;
 	font-weight: 700;
@@ -1139,7 +1139,7 @@ label {
 	font-weight: 500;
 	color: #6a696c;
 	margin-bottom: 5px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .rc-speakers-list ul li i {
@@ -1229,7 +1229,7 @@ label {
 	color: #e7005c;
 	font-weight: 700;
 	letter-spacing: 1.8px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: 'Poppins', sans-serif;
 	display: block;
 	margin-bottom: 5px;
@@ -1238,7 +1238,7 @@ label {
 .speaker-overlay h4 {
 	font-size: 26px;
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	line-height: 1;
 	margin-bottom: 20px;
 }
@@ -1272,7 +1272,7 @@ label {
 .more-speakers a {
 	color: #e7005c;
 	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 700;
 	letter-spacing: .5px;
 	font-size: 14px;
@@ -1324,7 +1324,7 @@ label {
 .fact-content>span {
 	display: block;
 	font-size: 13px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: 'Poppins', sans-serif;
 	color: #767676;
 }
@@ -1358,7 +1358,7 @@ label {
 
 .cta-content h2 {
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 40px;
 	margin-bottom: 10px;
 }
@@ -1397,7 +1397,7 @@ h5 span {
 	top: 145px;
 	opacity: .1;
 	z-index: -1;
-	
+
 }
 
 .conference-wrap {
@@ -1424,7 +1424,7 @@ h5 span {
 
 .con-speak-content h5 {
 	font-size: 18px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 0;
 }
 
@@ -1432,7 +1432,7 @@ h5 span {
 	display: block;
 	font-size: 13px;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #f7b205;
 	margin-top: 3px;
 	margin-bottom: 5px;
@@ -1529,7 +1529,7 @@ h5 span {
 	border: 3px solid #e1e1e1;
 	padding: 15px 20px;
 	color: #727171;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 14px;
 	transition: .3s linear;
 }
@@ -1573,7 +1573,7 @@ h5 span {
 
 .con-schedule-box .conference-date span {
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #fff;
 	line-height: 1;
 	font-size: 14px;
@@ -1586,7 +1586,7 @@ h5 span {
 	margin-left: -5px;
 	margin-right: -5px;
 	margin-bottom: 5px;
-	
+
 }
 
 .single-gallery-img {
@@ -1631,7 +1631,7 @@ h5 span {
 
 .pricing-head h6 {
 	font-size: 24px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #232a41;
 	line-height: 1;
 	margin-bottom: 5px;
@@ -1639,7 +1639,7 @@ h5 span {
 
 .pricing-head span {
 	font-size: 14px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #9098a9;
 	display: block;
 }
@@ -1668,7 +1668,7 @@ h5 span {
 .price-count>span {
 	display: block;
 	font-size: 13px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #e7005c;
 	font-family: 'Poppins', sans-serif;
 	margin-top: 10px;
@@ -1699,11 +1699,11 @@ h5 span {
 }
 
 .testi-content h4 {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 25px;
 	line-height: 40px;
 	color: #e3e3e3;
-	font-style:normal;
+	font-style: normal;
 	margin-bottom: 60px;
 }
 
@@ -1713,7 +1713,7 @@ h5 span {
 
 .testi-avatar-info h5 {
 	font-size: 20px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #ffffff;
 	margin-bottom: 5px;
 	line-height: 1;
@@ -1722,7 +1722,7 @@ h5 span {
 .testi-avatar-info span {
 	display: block;
 	font-size: 14px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #e7005c;
 	font-weight: 700;
 	font-family: 'Poppins', sans-serif;
@@ -1741,7 +1741,7 @@ h5 span {
 	border: none;
 	padding: 0;
 	font-size: 14px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #e7005c;
 	background: transparent;
 	z-index: 1;
@@ -1855,7 +1855,7 @@ h5 span {
 
 .contact-list ul li span {
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-right: 10px;
 }
 
@@ -1866,7 +1866,7 @@ h5 span {
 	border-bottom: 1px solid crimson;
 	padding-bottom: 13px;
 	margin-bottom: 45px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: white;
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
@@ -1923,7 +1923,7 @@ h5 span {
 	color: #3c3444;
 	font-size: 30px;
 	margin-bottom: 25px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .blog-list-content h2 a:hover {
@@ -1950,7 +1950,7 @@ h5 span {
 	font-size: 14px;
 	color: #9a9999;
 	font-weight: 400;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .blog-list-meta>ul>li.blog-post-date>i {
@@ -1959,7 +1959,7 @@ h5 span {
 
 .blog-list-meta ul li.blog-more-read a {
 	font-size: 13px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: 2px;
 	color: #3c3444;
 }
@@ -2004,7 +2004,7 @@ h5 span {
 	padding-left: 20px;
 	position: relative;
 	line-height: 1;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .sidebar-title h3::before {
@@ -2304,7 +2304,7 @@ blockquote::before {
 	font-size: 18px;
 	color: #4f405e;
 	margin-bottom: 10px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .post-avatar-content p {
@@ -2347,7 +2347,7 @@ blockquote::before {
 	font-size: 20px;
 	margin-bottom: 35px;
 	color: #4f405e;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .blog-comment ul li {
@@ -2382,7 +2382,7 @@ blockquote::before {
 	margin-bottom: 0;
 	display: inline-block;
 	color: #4f405e;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .comment-avatar-info h5 span {
@@ -2533,7 +2533,7 @@ blockquote::before {
 	color: #ffffff;
 	margin-bottom: 0;
 	opacity: .75;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 }
@@ -2810,6 +2810,12 @@ blockquote::before {
 
 .fontForH2 {
 	font-size: 40px;
+	font-weight: 700;
+}
+
+.fontForH3 {
+	font-size: 40px;
+	font-weight: 500;
 }
 
 .text-black {
@@ -2854,11 +2860,11 @@ blockquote::before {
 .accordion {
 	width: 100%;
 	margin: 0px auto;
-
+	margin-top: 10px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
 	font-style: normal;
-	font-size: 25px;
+	font-size: 22px;
 	color: #000000;
 }
 
@@ -3138,7 +3144,7 @@ label {
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
-	background-color: black;
+	/* background-color: black; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -3220,14 +3226,14 @@ a {
 	padding: 2px 5px;
   } */
 
-.float_form_btn{
+.float_form_btn {
 	width: auto;
 	height: 50px;
 	background: rgb(224, 29, 68);
 	padding: 0 10px;
 	position: fixed;
-	bottom: 94px;
-	right: 30px;
+	bottom: 40px;
+	right: 100px;
 	z-index: 100;
 	border-radius: 14px;
 	display: flex;
@@ -3235,26 +3241,61 @@ a {
 	align-items: center;
 	cursor: pointer;
 }
-.crossbtn{
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text-section {
+	flex: 60%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.video-section {
+	flex: 40%;
+	position: relative;
+	overflow: hidden;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.crossbtn {
 	float: right;
 }
-.float_form_btn img{
+
+.float_form_btn img {
 	width: 50px;
 	height: 50px;
 }
 
-.aboutVideo{
+/* .aboutVideo{
 	width: 30%;
 	height: 300px;
 	border: 1px solid black;
 	margin-top: 20px;
-}
-.flexAbout{
+} */
+/* .flexAbout{
 	display: flex;
 	justify-content: center;
 	align-items: start;
 
-}
-.aboutPara{
+} */
+/* .aboutPara{
 	width: 70%;
-}
+} */

@@ -1331,6 +1331,7 @@ h2,
 .heading-2 {
 	font-size: 36px;
 	line-height: 1.2;
+	font-weight: 700;
 }
 
 @media (min-width: 992px) {
@@ -1371,6 +1372,7 @@ h3,
 	.heading-3 {
 		font-size: 46px;
 		line-height: 1.2;
+		font-weight: 700;
 	}
 }
 
@@ -4494,7 +4496,8 @@ textarea.form-input {
 
 @media (min-width: 1200px) {
 	.testimonial-text {
-		font-size: 30px;
+		font-size: 22px;
+		text-align: center;
 	}
 	* + .testimonial {
 		margin-top: 50px;
