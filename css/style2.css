@@ -400,7 +400,7 @@ html [class*='section-'].section-bottom-0 {
 @media (max-width: 991.98px) {
 	section.section-sm:first-of-type,
 	section.section-md:first-of-type,
-	section.section-lg:first-of-type,
+	/* section.section-lg:first-of-type, */
 	section.section-xl:first-of-type,
 	section.section-xxl:first-of-type {
 		padding-top: 40px;
@@ -1073,13 +1073,13 @@ html [class*='section-'].section-bottom-0 {
 	display: block;
 }
 
-.bg-default {
+/* .bg-default {
 	background-color: beige;
-}
+} */
 
-.bg-default:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
+/* .bg-default:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
 	padding-top: 0;
-}
+} */
 
 .bg-gray-100 {
 	background-color: #f4f2ee;
@@ -1164,7 +1164,7 @@ html [class*='section-'].section-bottom-0 {
 	display: inline-block;
 	min-width: 170px;
 	font-size: 13px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .text-decoration-lines-content::before, .text-decoration-lines-content::after {
@@ -1275,7 +1275,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, [class^='heading-'] {
 	margin-bottom: 0;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	color: #26264b;
 }
@@ -1566,7 +1566,7 @@ h5 + p,
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: .2em;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	text-decoration: underline;
 }
 
@@ -1661,7 +1661,7 @@ h5 + p,
 	font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* /* text-transform: uppercase; */
 	letter-spacing: .2em;
 }
 
@@ -2426,7 +2426,7 @@ img {
 	font-weight: 400;
 	font-style: normal;
 	speak: none;
-	text-transform: none;
+	/* text-transform: none; */
 }
 
 .icon-default {
@@ -2714,7 +2714,7 @@ a.icon[class*='youtube']:hover {
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: .05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase; */
 	background: #f8f7f4;
 }
 
@@ -2871,7 +2871,7 @@ hr {
 	font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 600;
 	letter-spacing: 0;
-	text-transform: uppercase;
+	 /* text-transform: uppercase; */
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	text-align: center;
@@ -3197,7 +3197,7 @@ hr {
 	font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 600;
 	letter-spacing: .05em;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	transition: .33s;
 }
 
@@ -3759,7 +3759,7 @@ textarea.form-input {
 	font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	letter-spacing: .2em;
 }
 
@@ -3869,7 +3869,7 @@ textarea.form-input {
 	font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	line-height: 1.33333;
 	font-weight: 500;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	color: #d90e90;
 }
 
@@ -3914,7 +3914,7 @@ textarea.form-input {
 .post-single-terms dt {
 	margin-right: 5px;
 	color: #26264b;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 .post-single-terms dt, .post-single-terms dd {
@@ -3938,7 +3938,7 @@ textarea.form-input {
 	font-family: "Barlow Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	text-decoration: underline;
 	letter-spacing: .2em;
 }
@@ -3986,7 +3986,7 @@ textarea.form-input {
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: .2em;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	color: #d90e90;
 }
 
@@ -4203,7 +4203,7 @@ textarea.form-input {
 	font-size: 16px;
 	line-height: 1.2;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 * + .post-mini-title {
@@ -4433,10 +4433,11 @@ textarea.form-input {
 
 .testimonial-text {
 	position: relative;
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 400;
 	line-height: 1.25;
 	color: #26264b;
+	padding: 20px;
 }
 
 .testimonial-text:before {
@@ -4538,7 +4539,7 @@ textarea.form-input {
 	line-height: 1.7;
 	font-weight: 600;
 	letter-spacing: .2em;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 .breadcrumbs-custom-path li::after {
@@ -4924,7 +4925,7 @@ textarea.form-input {
 .snackbars-right {
 	display: inline-block;
 	float: right;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 .snackbars-right:hover {
@@ -5044,9 +5045,9 @@ textarea.form-input {
 	margin-top: 6px;
 }
 
-.bg-default .speaker {
+/* .bg-default .speaker {
 	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
-}
+} */
 
 .speaker-classic {
 	max-width: 270px;
@@ -5200,7 +5201,7 @@ textarea.form-input {
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: .2em;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 .sponsor-info-link:hover {
@@ -5662,10 +5663,7 @@ textarea.form-input {
 	display: block;
 }
 
-.schedule-classic-time,
-.schedule-classic-title {
-	text-transform: uppercase;
-}
+
 
 .schedule-classic-time {
 	font-size: 14px;
@@ -6477,7 +6475,7 @@ html.tablet .ui-to-top {
 	font-size: 18px;
 	line-height: 1.2;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	transition: .3s ease-out all;
 }
 
@@ -6902,7 +6900,7 @@ html.tablet .ui-to-top {
 .rd-navbar-fixed .rd-nav-link {
 	display: block;
 	padding: 9px 56px 9px 18px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 .rd-navbar-fixed .rd-nav-link, .rd-navbar-fixed .rd-nav-link:not([href]) {
@@ -7340,7 +7338,7 @@ html.rd-navbar-fixed-linked .page {
 	word-break: break-all;
 	font-size: 18px;
 	line-height: 1.4;
-	text-transform: none;
+	/* text-transform: none; */
 }
 
 .rd-navbar-sidebar .rd-nav-link, .rd-navbar-sidebar .rd-nav-link:not([href]), .rd-navbar-sidebar .rd-nav-link:not([href]):hover {
@@ -7662,10 +7660,7 @@ html.rd-navbar-fixed-linked .page {
 	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
 
-.rd-navbar-classic.rd-navbar-static .rd-megamenu-list-link,
-.rd-navbar-classic.rd-navbar-static .rd-dropdown-link {
-	text-transform: uppercase;
-}
+
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
 	max-width: 200px;
@@ -7737,10 +7732,7 @@ html.rd-navbar-fixed-linked .page {
 	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
 
-.rd-navbar-modern.rd-navbar-static .rd-megamenu-list-link,
-.rd-navbar-modern.rd-navbar-static .rd-dropdown-link {
-	text-transform: uppercase;
-}
+
 
 .rd-navbar-modern.rd-navbar-static .rd-navbar-brand img {
 	max-width: 200px;
@@ -8726,7 +8718,7 @@ button.swiper-pagination-bullet {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 30px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	color: #26264b;
 }
 
@@ -8778,7 +8770,7 @@ button.swiper-pagination-bullet {
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 0;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	text-align: center;
 	color: #ffffff;
 	background: #d90e90;
@@ -8876,7 +8868,7 @@ button.swiper-pagination-bullet {
 	font-size: 12px;
 	line-height: 1.7;
 	letter-spacing: .1em;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	color: #000000;
 }
 
@@ -9121,7 +9113,7 @@ button.swiper-pagination-bullet {
 	display: block;
 	font-weight: 600;
 	line-height: 1.3;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 .tabs-custom .nav-link-cite {
@@ -9412,7 +9404,7 @@ button.swiper-pagination-bullet {
 	font-weight: 600;
 	letter-spacing: .2em;
 	color: #d90e90;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 .box-counter-main {
@@ -9492,7 +9484,7 @@ button.swiper-pagination-bullet {
 	position: relative;
 	text-align: left;
 	color: #26264b;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 }
 
 .progress-linear-header {
@@ -9596,7 +9588,7 @@ button.swiper-pagination-bullet {
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: .2em;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	color: #f09922;
 	text-decoration: underline;
 }
@@ -9676,7 +9668,7 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 .countdown-title {
 	font-size: 16px;
 	line-height: 1.2;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */;
 	color: #8c8c9a;
 	letter-spacing: .2em;
 }
@@ -9861,7 +9853,7 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
-	text-transform: none;
+	/* text-transform: none; */
 	line-height: 1;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;

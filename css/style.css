@@ -36,9 +36,10 @@
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Poppins:400,400i,500,500i,600,600i,700|Source+Sans+Pro:400,600,600i,700,900&display=swap');
 
-html{
+html {
 	scroll-behavior: smooth;
 }
+
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
@@ -576,7 +577,7 @@ label {
 /* 4. Banner */
 .banner-bg {
 	background-image: url(../newImages/solidBg.jpg);
-	height: 751px;
+	height: 850px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -586,7 +587,7 @@ label {
 }
 
 .faq-bg {
-	background-image: url(../newImages/solidBg.jpg);
+	background-image: url(../newImages/white.jpg);
 	height: auto;
 	padding: 60px 60px;
 	background-size: cover;
@@ -596,12 +597,14 @@ label {
 	flex-direction: column;
 	align-items: center;
 	z-index: 1;
+	color: black
 }
 
 .contact-bg {
-	background-image: url(../newImages/solidBg.jpg);
+	/* background-image: url(../newImages/solidBg.jpg); */
+
 	height: auto;
-	padding: 0px 60px;
+	padding: 60px 0px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -612,7 +615,7 @@ label {
 }
 
 .faq-bg>p {
-	color: white;
+	color: black;
 }
 
 .banner-bg::before {
@@ -648,11 +651,11 @@ label {
 }
 
 .banner-content h2 {
-	font-size: 41px;
+	font-size: 50px;
 	color: #fff;
 	text-transform: uppercase;
 	font-style: italic;
-	line-height: 1;
+	line-height: 56px;
 	margin-bottom: 30px;
 }
 
@@ -918,9 +921,10 @@ label {
 /* 7. Scedule */
 .recent-schedule {
 	position: relative;
-	background-image: url(../newImages/solidBg.jpg);
+	background-image: url(../newImages/white.jpg);
 	background-position: center;
 	background-size: cover;
+	color: black;
 }
 
 .recent-schedule-bg {
@@ -1018,9 +1022,14 @@ label {
 
 .rc-schedule-content {
 	float: left;
-	width: 75%;
+	width: 100%;
 	margin-left: 50px;
 	padding-right: 50px;
+}
+
+.rc-schedule-content p {
+	font-size: 20px;
+	line-height: 30px;
 }
 
 .rc-schedule-speakers {
@@ -1370,7 +1379,7 @@ h5 span {
 
 /* 11. Conference */
 .conference-bg {
-	background-image: url(../newImages/solidBg.jpg);
+	background-image: url(../newImages/white.jpg);
 	/* background-color: #050A2E; */
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1402,6 +1411,7 @@ h5 span {
 .table td.con-speak-box {
 	width: 260px;
 	padding: 15px;
+
 }
 
 .con-speak-img img {
@@ -2744,7 +2754,7 @@ blockquote::before {
 }
 
 .mainText {
-	color: white;
+	color: black;
 	padding: 0 20px;
 	margin: 20px 0px;
 
@@ -2756,13 +2766,13 @@ blockquote::before {
 
 .spaceAround {
 	background-color: white;
-	background-image: url(/newImages/solidBg.jpg);
+	background-image: url(/newImages/white.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: auto;
 	padding: 60px 80px;
-	color: white;
+	color: black;
 }
 
 .spaceAround img {
@@ -2770,7 +2780,7 @@ blockquote::before {
 }
 
 .spaceAround p {
-	color: white;
+	color: black;
 }
 
 .speakerSection {
@@ -2780,7 +2790,7 @@ blockquote::before {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: auto;
-	padding: 60px 80px;
+	padding: 60px 50px;
 	padding-bottom: 0;
 }
 
@@ -2846,7 +2856,7 @@ blockquote::before {
 	font-weight: normal;
 	font-style: normal;
 	font-size: 25px;
-	color: #aca9b1;
+	color: #000000;
 }
 
 .accordion-item {
@@ -2870,6 +2880,7 @@ blockquote::before {
 	display: none;
 	padding: 15px;
 	background-color: transparent;
+	font-size: 20px;
 }
 
 .accordion-item.active .accordion-content {
@@ -2883,7 +2894,7 @@ blockquote::before {
 /* Contact section */
 
 .contact-body {
-	background-color: transparent;
+	background-color: beige;
 	margin: 0;
 	display: flex;
 	justify-content: center;
@@ -2895,7 +2906,7 @@ blockquote::before {
 	background-color: beige;
 	padding: 40px;
 	border-radius: 4px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 	width: 100%;
 	/* height: 400px; */
 	/* text-align: center; */
@@ -2919,7 +2930,7 @@ input {
 	border: 2px solid crimson;
 	border-radius: 12px;
 	font-size: 16px;
-	color: crimson;
+	color: rgb(190, 81, 103);
 	background: transparent;
 }
 
@@ -2932,7 +2943,7 @@ input {
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
+	grid-gap: 20px;
 	grid-column-gap: 50px;
 }
 
@@ -3028,6 +3039,7 @@ input[type="radio"]:checked+.radio-label::before {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 40px;
 }
 
 .customText {
@@ -3056,7 +3068,7 @@ label {
 }
 
 .popup-content {
-	background: #fff;
+	background: beige;
 	padding: 20px;
 	border-radius: 5px;
 	/* text-align: center; */
@@ -3076,21 +3088,153 @@ label {
 #closePopup:hover {
 	text-decoration: underline;
 }
-.centertext{
+
+.centertext {
 	text-align: center;
 }
 
-.textTransform{
+.textTransform {
 	text-transform: capitalize;
 }
-.mycolor{
+
+.mycolor {
 	font-size: 20px;
 	color: #f7b205;
+	padding: 4px 8px;
+	font-weight: 700;
+	width: 677px;
+	border: 1px solid #f7b205;
+}
+
+.pb5 {
 	padding-bottom: 15px;
 }
-.pb5{
-	padding-bottom: 15px;
-}
-.foot-anchor-link{
+
+.foot-anchor-link {
 	color: white;
+}
+
+.testimonial-name {
+	font-size: 23px;
+}
+
+.eachWordCap {
+	text-transform: capitalize;
+}
+
+.eachWordlower {
+	text-transform: lowercase;
+}
+
+.textSecLineHeight {
+	line-height: 23px;
+}
+
+.eachWordNone {
+	text-transform: none;
+}
+
+.numberCircle {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.fontWhite {
+	color: white;
+}
+
+.fontBlack {
+	color: black;
+}
+
+.fontSizeExtra {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.flexDate {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	column-gap: 30px;
+	margin-top: 20px;
+}
+
+.container-menu {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	/* height: 100vh; */
+}
+
+.menu {
+	background-color: transparent;
+	/* padding: 20px; */
+	border-radius: 13px;
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+	color: transparent;
+	width: 100%;
+}
+
+/* .select {
+	margin-bottom: 15px;
+  } */
+
+select {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 13px;
+	background-color: transparent;
+	color: crimson;
+	font-size: 16px;
+	cursor: pointer;
+	height: 53px;
+	border: 2px solid crimson;
+}
+
+.down_note {
+	text-align: center;
+}
+
+p {
+	margin: 0;
+	color: #fff;
+}
+
+a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* .borderBoxYesNo{
+	border: 2px solid crimson;
+	border-radius: 13px;
+	padding: 2px 5px;
+  } */
+
+.float_form_btn{
+	width: 70px;
+	height: 70px;
+	background: crimson;
+	position: fixed;
+	bottom: 94px;
+	right: 30px;
+	z-index: 100;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.float_form_btn img{
+	width: 50px;
+	height: 50px;
 }

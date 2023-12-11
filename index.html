@@ -88,8 +88,13 @@
   </header>
 
 
+
+
   <!-- main-area -->
   <main>
+    <div class="float_form_btn rc-event-btn">
+      <img src="newImages/forms.png" alt="">
+    </div>
     <!-- banner-area -->
     <section id="home" class="banner-area banner-bg fix">
       <div class="banner-bg-shape"></div>
@@ -98,19 +103,31 @@
           <div class="col-xl-7 col-lg-6">
             <div class="banner-content ">
               <!-- <h6 class="wow fadeInUp" data-wow-delay="0.2s">hURRYUP!</h6> -->
-              <h2 class="wow fadeInUp fontBold " data-wow-delay="0.4s">Nurturing Financial Success for
-                <span> <br>NRI's Worldwide</span>
+              <h2 class="wow fadeInUp fontBold " data-wow-delay="0.4s">Discover NRI Financial Opportunities &
+                <span> <br>Secure Your Future</span>
                 </>
-                <h5 class="text-white pb5 textTransform">Delivering financial services in India to cater to the needs
+                <h5 class="text-white pb5 pt-20 textTransform">Delivering financial services in India to cater to the
+                  needs
                   and
                   requirements of NRIs for over two
                   decades
                 </h5>
-                <p class="textTransform mycolor"> Served 500+ NRIs | Across 20+ Counties | Experience of 20+ Years</>
-                <div class="text-white"> Vadodara</div>
-                <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/23"></div>
-                <div class="text-white">Ahmedabad </div>
-                <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/24"></div>
+                <p class="textTransform mycolor "> Served 500+ NRIs | Clients from 20+ Countries | Experience of 20+
+                  Years
+                </p>
+
+                <div class="flexDate">
+                  <div class="timeBox">
+                    <div class="text-white"> Vadodara</div>
+                    <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/23"></div>
+                  </div>
+                  <div class="">
+                    <div class="text-white">Ahmedabad </div>
+                    <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/24"></div>
+                  </div>
+
+                </div>
+
                 <!-- <a   class="btn wow fadeInUp marginBottom_Register data-wow-delay="0.8s">BUY TICKET</a> -->
                 <button class="btn rc-event-btn">Register Now</button>
             </div>
@@ -124,6 +141,7 @@
       </div>
       <div class="banner-shape"><img src="img/shape/dot_circle.png" class="rotateme" alt="img"></div>
     </section>
+
     <div id="popup" class="popup">
       <div class="popup-content">
         <!-- Your popup content goes here -->
@@ -132,7 +150,12 @@
           <div class=" grid-container">
             <div class="form-group">
               <!-- <label for="name">Name:</label> -->
-              <input type="text" id="name" name="from_name" placeholder="Name" required>
+              <input type="text" id="first_name" name="from_first_name" placeholder="First Name" required>
+            </div>
+
+            <div class="form-group">
+              <!-- <label for="name">Name:</label> -->
+              <input type="text" id="last_name" name="from_last_name" placeholder="Last Name" required>
             </div>
 
             <div class="form-group">
@@ -145,9 +168,21 @@
               <input type="tel" id="mobile" name="from_mobile" placeholder="Whatsapp no." required>
             </div>
 
-            <div class="form-group">
+
+            <div class="container-menu">
+              <div class="menu">
+                <div class="select">
+                  <select id="fromSelect" name="preferred_city">
+                    <option value="1" hidden>Select preferred city to attend our event</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Vadodara">Vadodara</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="borderBoxYesNo">
               <!-- <label>Yes or No:</label> -->
-              <label for="yesno"> Do you have any relatives who are NRIs?</label>
+              <label for="yesno">Are you a relative or friend of NRI?</label>
               <div class="grid-container">
 
                 <div class="flex-item">
@@ -163,6 +198,7 @@
                 </div>
               </div>
             </div>
+
           </div>
           <div class="alignCenter">
             <button type="submit" class="cool-button">Submit</button>
@@ -180,22 +216,22 @@
         <div class="row">
           <div class="">
             <div class="mainText">
-              <h2 class="text-white fontForH2">About Us</h2>
+              <h2 class=" fontForH2">About Us</h2>
             </div>
-            <div class="mainText marginBottom">
+            <p class="mainText marginBottom fontSizeExtra">
               Ashutosh Financial Services Pvt. Ltd. is your premier destination for comprehensive financial solutions.
               Recognised as a top-notch NRI Financial Service Provider in India, we pride ourselves on empowering the
               NRI community for seamless investment in India.
               <br>
-              Understanding the intricate landscape of Indian investments governed by myriad rules, our seasoned team
-              swiftly identifies your needs and objectives through a carefully devised set of procedures. Leveraging our
-              expertise, we offer tailored advice, turning your financial journey into a collaborative effort towards
-              realising your aspirations.
-
-            </div>
+              Our experienced team offers a streamlined process to pinpoint your goals. We provide personalised advice
+              to help you to achieve your financial aspirations. Additionally, we offer income tax and foreign tax
+              compliance services for NRIs. Our dedicated departments for Investment, Insurance, Income Tax, and
+              Research ensure top-notch service quality for you and your family members, friends and relatives staying
+              abroad.
+              </di>
           </div>
           <div class="col-xl-6 col-lg-8">
-            <h2 class="text-white fontForH2 white-nowrap">upcoming EVENT SCHEDULE</h2>
+            <h2 class=" fontForH2 white-nowrap">Upcoming event schedule</h2>
             <div class="section-title white-title text-center mb-70 ">
 
               <!-- <span>Recent SCHEDULE</span> -->
@@ -235,7 +271,7 @@
                     aria-labelledby="schedule-one-tab">
 
                     <div class="rc-schedule-content">
-                      <h2>Finance Fusion <span>Vadodara </span></h2>
+                      <h2><span>Vadodara </span></h2>
                       <div class="rc-schedule-meta mb-20">
                         <ul>
                           <!-- <li><i class="far fa-user"></i><a  >Admin</a></li> -->
@@ -252,7 +288,7 @@
                         elsewhere. Join us and elevate your financial journey!
 
                       </p>
-                      <p>Join us and empower your financial journey!</p>
+                      <p class="font-weight-sbold">Join us and empower your financial journey!</p>
 
 
                     </div>
@@ -278,7 +314,7 @@
                   <div class="tab-pane fade" id="schedule-two" role="tabpanel" aria-labelledby="schedule-two-tab">
 
                     <div class="rc-schedule-content">
-                      <h2>Finance Fusion <span>Ahmedabad </span></h2>
+                      <h2><span>Ahmedabad </span></h2>
                       <div class="rc-schedule-meta mb-20">
                         <ul>
                           <li><i class="far fa-clock"></i>December 23, 2023 | <span class="text-pink">10:30 AM IST
@@ -294,7 +330,7 @@
                         your financial journey!
 
                       </p>
-                      <p> Join us and elevate your financial journey!</p>
+                      <p class="font-weight-sbold"> Join us and elevate your financial journey!</p>
                     </div>
                     <div class="rc-schedule-speakers fix">
                       <div class="rc-speakers-img">
@@ -404,12 +440,13 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <img src="newImages/sp.jpg" alt="Picture 1">
+              <img src="newImages/DDK.png" alt="Picture 1">
             </div>
             <div class="col-md-6">
               <h2 class="fontForH2">Mr. Daxesh D. Kothari</h2>
-              <p class="font-weight-sbold">Managing Director & CEO of Ashutosh Financial Services Pvt. Ltd.</>
-              <p>Mr. Daxesh D. Kothari is a renowned Tax & Financial Consultant. With expertise in Income Tax, FEMA,
+              <p class="fontBlack font-weight-sbold">Managing Director & CEO of Ashutosh Financial Services Pvt. Ltd.</>
+              <p class="fontBlack">Mr. Daxesh D. Kothari is a renowned Tax & Financial Consultant. With expertise in
+                Income Tax, FEMA,
                 Trust Laws, and more, he provides specialised services in Investment and Insurance Advisory. As a
                 Trustee of charitable trusts and a Paul Harris Fellow of Rotary International, he actively engages in
                 social service projects. With 17 years of experience, he delivers insightful analyses on the Union
@@ -426,9 +463,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="fontForH2">CA Rajit D. Kothari</h2>
-              <p class="font-weight-sbold">Executive Director of Ashutosh Financial Services Pvt. Ltd.</p>
-              <p>Mr. Rajit D. Kothari is a Chartered Accountant and Certified Financial Planner. A commerce graduate
+              <h2 class=" fontForH2">CA Rajit D. Kothari</h2>
+              <p class="fontBlack font-weight-sbold">Executive Director of Ashutosh Financial Services Pvt. Ltd.</p>
+              <p class="fontBlack">Mr. Rajit D. Kothari is a Chartered Accountant and Certified Financial Planner. A
+                commerce graduate
                 specialising in BFSI from Ahmedabad University, he also holds an LLB post-graduation. His journey began
                 at Ashutosh Financial Services, where he played a pivotal role in core activities. Later, at Deloitte
                 Haskins & Sells LLP, Mumbai, he focused on tax and regulatory compliance for High Net Worth individuals.
@@ -437,7 +475,7 @@
               </p>
             </div>
             <div class="col-md-6">
-              <img src="newImages/speakerOne.jpg" alt="Picture 2">
+              <img src="newImages/RDK.png" alt="Picture 2">
             </div>
           </div>
         </div>
@@ -450,7 +488,7 @@
       <div class="conference-bg-text"><img src="" alt="img"></div>
       <div class="container">
         <div class="row justify-content-center">
-          <h2 class="text-white white-nowrap">Conference Schedule</h2>
+          <h2 class="white-nowrap">Conference Schedule</h2>
           <div class="col-xl-6 col-lg-8">
 
             <div class="section-title text-center mb-10">
@@ -491,11 +529,14 @@
                       <!-- <td class="con-speak-box conference-blank"></td> -->
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
-                          <div class="con-speak-img mb-25">
+                          <div class="numberCircle">
+                            <h3 class="fontWhite">1</h3>
+                          </div>
+                          <!-- <div class="con-speak-img mb-25">
                             <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
                               data-placement="right" title="Alisa Jo.">
-                          </div>
-                          <div class="con-speak-content">
+                          </div> -->
+                          <div class="con-speak-content mb-25">
                             <h5>Introduction</h5>
                             <span>4:30 PM to 5:00 PM</span>
                             <!-- <p>Event definition is thing that happens occurce</p> -->
@@ -505,8 +546,9 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Alisa Jo.">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">2</h3>
+                            </div>
                           </div>
                           <div class="con-speak-content">
                             <h5>NRI Taxation & Regulations</h5>
@@ -519,8 +561,9 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="jam margn">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">3</h3>
+                            </div>
                           </div>
                           <div class="con-speak-content">
                             <h5>NRI Investments & Insurance</h5>
@@ -532,8 +575,9 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="jam margn">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">4</h3>
+                            </div>
                           </div>
                           <div class="con-speak-content">
                             <h5>Panel discussion on GIFT City</h5>
@@ -545,8 +589,9 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="jam margn">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">5</h3>
+                            </div>
                           </div>
                           <div class="con-speak-content">
                             <h5>Q&A</h5>
@@ -563,10 +608,11 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="jam margn">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">1</h3>
+                            </div>
                           </div>
-                          <div class="con-speak-content">
+                          <div class="con-speak-content mb-25">
                             <h5>Introduction</h5>
                             <span>10:30 am to 11 am</span>
                             <!-- <p>Event definition is thing that happens occurce</p> -->
@@ -577,8 +623,9 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Reveka Lio">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">2</h3>
+                            </div>
                           </div>
                           <div class="con-speak-content">
                             <h5>NRI Taxation & Regulations</h5>
@@ -590,8 +637,9 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Reveka Lio">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">3</h3>
+                            </div>
                           </div>
                           <div class="con-speak-content">
                             <h5>NRI Investments & Insurance</h5>
@@ -603,8 +651,9 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Reveka Lio">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">4</h3>
+                            </div>
                           </div>
                           <div class="con-speak-content">
                             <h5>Panel discussion on GIFT City</h5>
@@ -616,8 +665,9 @@
                       <td class="con-speak-box">
                         <div class="single-conference-speaker">
                           <div class="con-speak-img mb-25">
-                            <img src="newImages/event.png" width="60" alt="img" data-toggle="tooltip"
-                              data-placement="right" title="Reveka Lio">
+                            <div class="numberCircle">
+                              <h3 class="fontWhite">5</h3>
+                            </div>
                           </div>
                           <div class="con-speak-content">
                             <h5>Q&A</h5>
@@ -644,7 +694,7 @@
       <div class="parallax-content section-lg context-dark text-center">
         <div class="container">
           <div class="row row-30 justify-content-center">
-            <div class="col-md-10 col-lg-8"><a class="video-link wow fadeScale"
+            <div class="col-md-10 col-lg-10"><a class="video-link wow fadeScale"
                 href="https://www.youtube.com/watch?v=DZc31wGBI9c&t=2s" data-lightgallery="item">
                 <div class="video-link-bg" data-triangle=".video-link-overlay"><span class="video-link-overlay"></span>
                 </div>
@@ -653,9 +703,10 @@
                 </span>
 
               </a>
-              <h6 class="text-secondary wow" data-splitting>click here to Watch our video</h6>
-              <h2 class="wow" data-splitting>Why You Should Attend This Event?</h2>
-              <h6 class="text-secondary wow pt-20" data-splitting>If you want to navigate the intricate landscape of NRI
+              <h6 class="text-secondary wow eachWordNone" data-splitting>Click Here To Watch Our Video</h6>
+              <h3 class="wow eachWordNone" data-splitting>Why You Should Attend This Event?</h3>
+              <h6 class="text-secondary wow pt-20 eachWordlower textSecLineHeight" data-splitting>If you want to
+                navigate the intricate landscape of NRI
                 investments in India, then this event is for you. <br> <br>
 
                 Get insights from comprehensive services, including income tax compliance, banking solutions,
@@ -664,13 +715,14 @@
                 strategies for the financial success of your NRI family members, friends or relatives. <br> <br>
 
                 Don't miss this opportunity to optimise your investments and financial planning.
-                Join Today!
+                <span class="fontBold"> Join Today!</span>
               </h6>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Section Our Benefits-->
     <section class="spaceAround">
       <div class="container">
         <div class="row justify-content-center text-center">
@@ -683,7 +735,7 @@
               </div>
               <!-- <span class="sec-subtitle">What wE pROVIDE</span> -->
               <div class="">
-                <h2 class="text-white white-nowrap pb-40">Our Exclusive Benefits</h2>
+                <h2 class="white-nowrap pb-40 eachWordCap">Our Exclusive Benefits</h2>
               </div>
             </div>
           </div>
@@ -704,13 +756,25 @@
           <div class="col-md-6 col-lg-4  wow fadeInUp" data-wow-delay="0.4s">
             <div class="service-style2">
               <div class="service-icon">
-                <img src="newImages/expert.png" alt="Service Shape">
+                <img src="newImages/tomorrow.png" alt="Service Shape">
               </div>
-              <h3 class="service-title h5"><a class="text-inherit">Expert Q&A Session</a></h3>
-              <p class="service-text">Personally resolve NRI queries with seasoned financial experts, ensuring clarity
-                on all financial concerns.</p>
+              <h3 class="service-title h5"><a class="text-inherit">Insuring Your Tomorrow</a></h3>
+              <p class="service-text">From life insurance to retirement planning, gain valuable insurance insights and
+                ensure financial security for the future.</p>
             </div>
           </div>
+
+          <div class="col-md-6 col-lg-4  wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-style2">
+              <div class="service-icon">
+                <img src="newImages/INVESTMENT.png" alt="Service Shape">
+              </div>
+              <h3 class="service-title h5"><a class="text-inherit">Investment Insights Unveiled</a></h3>
+              <p class="service-text">Discover upcoming investment opportunities in India through a detailed analysis
+                tailored to individual investment objectives.</p>
+            </div>
+          </div>
+
           <div class="col-md-6 col-lg-4  wow fadeInUp" data-wow-delay="0.5s">
             <div class="service-style2">
               <div class="service-icon">
@@ -722,16 +786,7 @@
                 on optimising financial prospects.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4  wow fadeInUp" data-wow-delay="0.6s">
-            <div class="service-style2">
-              <div class="service-icon">
-                <img src="newImages/INVESTMENT.png" alt="Service Shape">
-              </div>
-              <h3 class="service-title h5"><a class="text-inherit">Investment Insights Unveiled</a></h3>
-              <p class="service-text">Discover upcoming investment opportunities in India through a detailed analysis
-                tailored to individual investment objectives.</p>
-            </div>
-          </div>
+
           <div class="col-md-6 col-lg-4  wow fadeInUp" data-wow-delay="0.7s">
             <div class="service-style2">
               <div class="service-icon">
@@ -740,6 +795,16 @@
               <h3 class="service-title h5"><a class="text-inherit">NRI Networking Gala</a></h3>
               <p class="service-text">Connect and network with like-minded NRIs over dinner, fostering valuable
                 relationships and discussions on Indian financial matters.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4  wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-style2">
+              <div class="service-icon">
+                <img src="newImages/expert.png" alt="Service Shape">
+              </div>
+              <h3 class="service-title h5"><a class="text-inherit">Expert Q&A Session</a></h3>
+              <p class="service-text">Personally resolve NRI queries with seasoned financial experts, ensuring clarity
+                on all financial concerns.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-center mt-30 mt-md-0">
@@ -752,13 +817,14 @@
       </div>
     </section>
     <!-- Section Our Testimonials-->
-    <section class="section parallax-js section-lg bg-default text-center">
-      <div class="container">
-        <!-- <h6>what they say</h6> -->
-        <h3>Hear From Our Successful NRIs</h3>
-        <div class="row row-30 justify-content-center">
-          <div class="col-md-10 col-lg-8">
-            <div class="slick-slider child-slick-slider" id="child-carousel" data-for=".carousel-parent"
+    <section class="section parallax-js section-lg bg-default >
+      <div class=" container">
+      <!-- <h6>what they say</h6> -->
+
+      <h2 class="text-center white-nowrap pb-40 eachWordCap">Hear From Our Successful NRIs</h2>
+      <div class="row row-30 justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <!-- <div class="slick-slider child-slick-slider" id="child-carousel" data-for=".carousel-parent"
               data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="3" data-sm-items="3"
               data-md-items="3" data-lg-items="3" data-xl-items="3" data-slide-to-scroll="1">
               <div class="item"><a><img src="images/testimonial-thumb-01-80x80.jpg" alt="" width="80" height="80" /></a>
@@ -767,68 +833,66 @@
               </div>
               <div class="item"><a><img src="images/testimonial-thumb-03-80x80.jpg" alt="" width="80" height="80" /></a>
               </div>
+            </div> -->
+          <div class="slick-slider carousel-parent" data-arrows="false" data-loop="true" data-autoplay="true"
+            data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+            <div class="item">
+              <div class="testimonial">
+                <div class="wow fadeIn">
+                  <!-- Testimonial-->
+                  <p class="testimonial-text heading-4">“Ashutosh Financial Services is my go-to for NRI financial
+                    planning. The events have been eye-opening, offering a deep dive into opportunities. Their
+                    personalised approach ensures my financial goals align perfectly. Highly recommended!"</p>
+                  <ul class="list-inline">
+                    <!-- <li><span class="icon icon-sm icon-primary fa-star"></span></li>
+                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
+                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
+                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
+                      <li><span class="icon icon-sm icon-secondary fa-star-half-empty"></span></li> -->
+                  </ul>
+                  <div class="testimonial-footer text-center"><a class="testimonial-name">Jitendra Shaw</a> <span
+                      class="testimonial-cite"> - Software Engineer, US</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="slick-slider carousel-parent" data-arrows="false" data-loop="true" data-autoplay="true"
-              data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel"
-              data-for="#child-carousel">
-              <div class="item">
-                <div class="testimonial">
-                  <div class="wow fadeIn">
-                    <!-- Testimonial-->
-                    <p class="testimonial-text heading-4">“Ashutosh Financial Services is my go-to for NRI financial
-                      planning. The events have been eye-opening, offering a deep dive into opportunities. Their
-                      personalised approach ensures my financial goals align perfectly. Highly recommended!"</p>
-                    <ul class="list-inline">
+            <div class="item">
+              <div class="testimonial">
+                <div class="wow fadeIn">
+                  <!-- Testimonial-->
+                  <p class="testimonial-text heading-4">"Ashutosh Financial Services has been my financial compass.
+                    They guided me through complex NRI investments. The events were eye-openers. I received valuable
+                    insights that reshaped my financial strategy. Grateful for their expertise!"</p>
+                  <ul class="list-inline">
+                    <!-- <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                       <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                       <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                       <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                      <li><span class="icon icon-sm icon-secondary fa-star-half-empty"></span></li>
-                    </ul>
-                    <div class="testimonial-footer"><a class="testimonial-name">Jitendra Shaw</a> <span
-                        class="testimonial-cite"> - Software Engineer, US</span>
-                    </div>
+                      <li><span class="icon icon-sm icon-secondary fa-star-half-empty"></span></li> -->
+                  </ul>
+                  <div class="testimonial-footer text-center"><a class="testimonial-name">Sumit Chauhan</a> <span
+                      class="testimonial-cite"> - Data Analyst, Canada</span>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimonial">
-                  <div class="wow fadeIn">
-                    <!-- Testimonial-->
-                    <p class="testimonial-text heading-4">"Ashutosh Financial Services has been my financial compass.
-                      They guided me through complex NRI investments. The events were eye-openers. I received valuable
-                      insights that reshaped my financial strategy. Grateful for their expertise!"</p>
-                    <ul class="list-inline">
+            </div>
+            <div class="item">
+              <div class="testimonial">
+                <div class="wow fadeIn">
+                  <!-- Testimonial-->
+                  <p class="testimonial-text heading-5">"Ashutosh Financial Services played a pivotal role in guiding
+                    my brother, who is currently residing in Magdeburg, Germany. The insightful events offered a
+                    comprehensive view, making the complex and intricate world of NRI investments more understandable
+                    and manageable."</p>
+                  <ul class="list-inline">
+                    <!-- <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                       <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                       <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                       <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                      <li><span class="icon icon-sm icon-secondary fa-star-half-empty"></span></li>
-                    </ul>
-                    <div class="testimonial-footer"><a class="testimonial-name">Sumit Chauhan</a> <span
-                        class="testimonial-cite"> - Data Analyst, Canada</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial">
-                  <div class="wow fadeIn">
-                    <!-- Testimonial-->
-                    <p class="testimonial-text heading-5">"Ashutosh Financial Services played a pivotal role in guiding
-                      my brother, who is currently residing in Magdeburg, Germany. The insightful events offered a
-                      comprehensive view, making the complex and intricate world of NRI investments more understandable
-                      and manageable."</p>
-                    <ul class="list-inline">
-                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
-                    </ul>
-                    <div class="testimonial-footer"><a class="testimonial-name">Suchitra Rau</a> <span
-                        class="testimonial-cite"> - IT, Bhopal, India</span>
-                    </div>
+                      <li><span class="icon icon-sm icon-secondary fa-star"></span></li> -->
+                  </ul>
+                  <div class="testimonial-footer text-center"><a class="testimonial-name">Suchitra Rau</a> <span
+                      class="testimonial-cite"> - IT, Bhopal, India</span>
                   </div>
                 </div>
               </div>
@@ -836,7 +900,8 @@
           </div>
         </div>
       </div>
-      <div class="layer layer-01">
+      </div>
+      <!-- <div class="layer layer-01">
         <svg width="126" height="126" viewbox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
           <mask id="mask0" maskunits="userSpaceOnUse" x="0" y="0" width="126" height="126">
             <path
@@ -960,12 +1025,12 @@
         <svg width="53" height="48" viewbox="0 0 53 48" xmlns="http://www.w3.org/2000/svg">
           <path d="M21.5295 5.85179L52.1481 36.4704L10.3223 47.6776L21.5295 5.85179Z"></path>
         </svg>
-      </div>
+      </div> -->
     </section>
     <!--Section: FAQ-->
     <section id="faq" class="faq-bg">
-      <h3 class="text-center pb-2 text-primary fw-bold">FAQ</h3>
-      <p class="text-centertext-white">
+      <h3 class="text-center pb-2 fontBlack fw-bold">FAQ</h3>
+      <p class="fontBlack">
         Find the answers for the most frequently asked questions below
       </p>
 
@@ -1036,15 +1101,13 @@
 
         <div class="accordion-item">
           <div class="accordion-header">Q. Is the event chargeable?</div>
-          <div class="accordion-content">Participation in the NRI Conclave is complimentary in Vadodara. As part of our
-            dedication to the NRI community, we provide this event as a free service, fostering inclusivity and ensuring
-            accessibility to valuable information. However, the Ahmedabad event has a nominal charge of Rs. 1000.
+          <div class="accordion-content">Participation in the NRI Conclave is completely FREE in both Vadodara and Ahmedabad. As a part of our dedication to the NRI community, we offer this event as a free service, fostering inclusivity and ensuring accessibility to valuable information
           </div>
         </div>
       </div>
     </section>
     <!-- contact-area -->
-    <section id="contact" class="contact-area contact-bg pt-115 pb-120 contact-body">
+    <section id="contact" class="contact-area contact-bg contact-body">
       <!-- <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -1090,7 +1153,12 @@
         <div class=" grid-container">
           <div class="form-group">
             <!-- <label for="name">Name:</label> -->
-            <input type="text" id="name" name="from_name" placeholder="Name" required>
+            <input type="text" id="first_name" name="from_first_name" placeholder="First Name" required>
+          </div>
+
+          <div class="form-group">
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="last_name" name="from_last_name" placeholder="Last Name" required>
           </div>
 
           <div class="form-group">
@@ -1103,9 +1171,21 @@
             <input type="tel" id="mobile" name="from_mobile" placeholder="Whatsapp no." required>
           </div>
 
-          <div class="form-group">
+
+          <div class="container-menu">
+            <div class="menu">
+              <div class="select">
+                <select id="fromSelect" name="preferred_city">
+                  <option value="1" hidden>Select preferred city to attend our event</option>
+                  <option value="Ahmedabad">Ahmedabad</option>
+                  <option value="Vadodara">Vadodara</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="borderBoxYesNo">
             <!-- <label>Yes or No:</label> -->
-            <label for="yesno"> Do you have any relatives who are NRIs?</label>
+            <label for="yesno">Are you a relative or friend of NRI?</label>
             <div class="grid-container">
 
               <div class="flex-item">
@@ -1121,6 +1201,7 @@
               </div>
             </div>
           </div>
+
         </div>
         <div class="alignCenter">
           <button type="submit" class="cool-button">Submit</button>
@@ -1128,7 +1209,7 @@
       </form>
     </section>
     <!-- Section Pre Footer-->
-    <section class="section section-lg faq-bg">
+    <!-- <section class="section section-lg faq-bg">
       <div class="container">
         <div class="row row-30">
           <div class="col-xs-10 col-lg-4 align-self-center"><a class="brand" href="index.html"><img class=""
@@ -1147,17 +1228,17 @@
             </div>
           </div>
           <div class="col-xs-10 col-sm-6 col-lg-4">
-            <!-- <h5><span class="big font-weight-sbold">Social Updates</span></h5>
+            <h5><span class="big font-weight-sbold">Social Updates</span></h5>
             <div class="event-detail">
               <p class="big">You may wonder: why this event so popular? If you do, find
                 more info about it here.
-              </p> -->
+              </p>
 
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
   </main>
@@ -1219,7 +1300,7 @@
         section.scrollIntoView({ behavior: 'smooth' });
       }
     }
-  
+
     // Defer the execution of scrollToSection until the page has fully loaded
     // document.addEventListener('DOMContentLoaded', function () {
     //   var links = document.querySelectorAll('.nav-link');
@@ -1234,11 +1315,11 @@
   </script>
   <script>
     // Function to open the popup 5 seconds after page load
-    function openPopupAfterDelay() {
-      setTimeout(function () {
-        document.getElementById('popup').style.display = 'flex';
-      }, 5000);
-    }
+    // function openPopupAfterDelay() {
+    //   setTimeout(function () {
+    //     document.getElementById('popup').style.display = 'flex';
+    //   }, 5000);
+    // }
 
     // Function to open the popup
     function openPopup() {
@@ -1286,15 +1367,19 @@
   <script type="text/javascript">
     function sendEmail(form) {
 
-      var from_name = form.from_name.value;
+      var from_first_name = form.from_first_name.value;
+      var from_last_name = form.from_last_name.value;
       var from_email = form.from_email.value;
       var from_mobile = form.from_mobile.value;
       var yesno = form.yesno.value; // Assuming yesno is a radio button group
 
+      // Additional field from the dropdown menu
+      var preferred_city = document.getElementById("fromSelect").value
       // console.log('Name: ', from_name);
       // console.log('Email: ', from_email);
       // console.log('Mobile: ', from_mobile);
       // console.log('Yes/No: ', yesno);
+      console.log('City: ', preferred_city);
       // generate a five-digit number for the contact_number variable
       // form.contact_number.value = Math.random() * 100000 | 0;
       // these IDs from the previous steps
