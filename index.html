@@ -92,8 +92,8 @@
 
   <!-- main-area -->
   <main>
-    <div class="float_form_btn rc-event-btn">
-      <img src="newImages/forms.png" alt="">
+    <div class="float_form_btn rc-float-btn">
+     <p class="fontWhite">Register for Enquiry</p>
     </div>
     <!-- banner-area -->
     <section id="home" class="banner-area banner-bg fix">
@@ -103,26 +103,26 @@
           <div class="col-xl-7 col-lg-6">
             <div class="banner-content ">
               <!-- <h6 class="wow fadeInUp" data-wow-delay="0.2s">hURRYUP!</h6> -->
-              <h2 class="wow fadeInUp fontBold " data-wow-delay="0.4s">Discover NRI Financial Opportunities &
-                <span> <br>Secure Your Future</span>
+              <h2 class="wow fadeInUp fontBold eachWordNone" data-wow-delay="0.4s">Discover The Opportunities For
+                <span>NRI Financial Investment & Much More</span>
                 </>
-                <h5 class="text-white pb5 pt-20 textTransform">Delivering financial services in India to cater to the
+                <!-- <h5 class="text-white pb5 pt-20 textTransform">Delivering financial services in India to cater to the
                   needs
                   and
                   requirements of NRIs for over two
                   decades
-                </h5>
+                </h5> -->
                 <p class="textTransform mycolor "> Served 500+ NRIs | Clients from 20+ Countries | Experience of 20+
                   Years
                 </p>
 
                 <div class="flexDate">
                   <div class="timeBox">
-                    <div class="text-white"> Vadodara</div>
+                    <p class="text-white"> Vadodara</p>
                     <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/23"></div>
                   </div>
                   <div class="">
-                    <div class="text-white">Ahmedabad </div>
+                    <p class="text-white">Ahmedabad </p>
                     <div class="coming-time wow fadeInUp" data-wow-delay="0.6s" data-countdown="2023/12/24"></div>
                   </div>
 
@@ -145,6 +145,9 @@
     <div id="popup" class="popup">
       <div class="popup-content">
         <!-- Your popup content goes here -->
+        <div class="crossbtn">
+          <img src="newImages/cross.png" width="20" alt="" id="closePopup">
+        </div>
         <form class="form-container" id="contact-form" onsubmit="sendEmail(this); return false;">
           <div class="customText">Contact Us</div>
           <div class=" grid-container">
@@ -204,31 +207,38 @@
             <button type="submit" class="cool-button">Submit</button>
           </div>
         </form>
-        <div class="centertext">
-          <button id="closePopup">Skip for later</button>
-        </div>
+        <!-- <div class="centertext">
+          <button id="">Skip for later</button>
+        </div> -->
       </div>
     </div>
     <!-- recent-schedule -->
     <section id="events" class="recent-schedule pt-20">
-
       <div class="container">
         <div class="row">
           <div class="">
             <div class="mainText">
               <h2 class=" fontForH2">About Us</h2>
             </div>
-            <p class="mainText marginBottom fontSizeExtra">
-              Ashutosh Financial Services Pvt. Ltd. is your premier destination for comprehensive financial solutions.
-              Recognised as a top-notch NRI Financial Service Provider in India, we pride ourselves on empowering the
-              NRI community for seamless investment in India.
-              <br>
-              Our experienced team offers a streamlined process to pinpoint your goals. We provide personalised advice
-              to help you to achieve your financial aspirations. Additionally, we offer income tax and foreign tax
-              compliance services for NRIs. Our dedicated departments for Investment, Insurance, Income Tax, and
-              Research ensure top-notch service quality for you and your family members, friends and relatives staying
-              abroad.
-              </di>
+            <div class="flexAbout">
+              <p class="mainText marginBottom fontSizeExtra aboutPara">
+                Ashutosh Financial Services Pvt. Ltd. is your premier destination for comprehensive financial solutions.
+                Recognised as a top-notch NRI Financial Service Provider in India, we pride ourselves on empowering the
+                NRI community for seamless investment in India. <br> <br>
+                Our experienced team offers a streamlined process to pinpoint your goals. We provide personalised advice
+                to help you to achieve your financial aspirations. Additionally, we offer income tax and foreign tax
+                compliance services for NRIs. Our dedicated departments for Investment, Insurance, Income Tax, and
+                Research ensure top-notch service quality for you and your family members, friends and relatives staying
+                abroad.
+              </p>
+              <div class="aboutVideo">
+                <iframe width="390" height="300" src="https://www.youtube.com/embed/DZc31wGBI9c?si=S9o0x7Z7Rh4iQy3H"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+
           </div>
           <div class="col-xl-6 col-lg-8">
             <h2 class=" fontForH2 white-nowrap">Upcoming event schedule</h2>
@@ -484,19 +494,10 @@
 
     </section>
     <!-- conference-schedule -->
-    <section id="schedule" class="conference-schedule conference-bg pt-40">
+    <section id="schedule" class="conference-schedule conference-bg">
       <div class="conference-bg-text"><img src="" alt="img"></div>
       <div class="container">
-        <div class="row justify-content-center">
-          <h2 class="white-nowrap">Conference Schedule</h2>
-          <div class="col-xl-6 col-lg-8">
-
-            <div class="section-title text-center mb-10">
-              <!-- <span>THE SCHEDULE</span> -->
-
-            </div>
-          </div>
-        </div>
+        <h2 class="text-center white-nowrap">Conference Schedule</h2>
         <div class="row">
           <div class="col-12">
             <div class="conference-wrap">
@@ -746,10 +747,9 @@
               <div class="service-icon">
                 <img src="newImages/financial.png" alt="Service Shape">
               </div>
-              <h3 class="service-title h5"><a class="text-inherit">Financial Frontier Exploration</a>
+              <h3 class="service-title h5"><a class="text-inherit">Understanding Financial Affairs              </a>
               </h3>
-              <p class="service-text">Gain a holistic understanding of NRI financial matters, covering taxation,
-                regulations, investments, and insurance.
+              <p class="service-text">Get a complete understanding of NRI financial matters, including taxes, regulations, investments, and insurance.
               </p>
             </div>
           </div>
@@ -758,9 +758,8 @@
               <div class="service-icon">
                 <img src="newImages/tomorrow.png" alt="Service Shape">
               </div>
-              <h3 class="service-title h5"><a class="text-inherit">Insuring Your Tomorrow</a></h3>
-              <p class="service-text">From life insurance to retirement planning, gain valuable insurance insights and
-                ensure financial security for the future.</p>
+              <h3 class="service-title h5"><a class="text-inherit">Insurance For Your Future</a></h3>
+              <p class="service-text">From life insurance to retirement planning, gain valuable insurance insights and ensure financial security for the future.</p>
             </div>
           </div>
 
@@ -769,9 +768,8 @@
               <div class="service-icon">
                 <img src="newImages/INVESTMENT.png" alt="Service Shape">
               </div>
-              <h3 class="service-title h5"><a class="text-inherit">Investment Insights Unveiled</a></h3>
-              <p class="service-text">Discover upcoming investment opportunities in India through a detailed analysis
-                tailored to individual investment objectives.</p>
+              <h3 class="service-title h5"><a class="text-inherit">Investment Plans</a></h3>
+              <p class="service-text">Explore upcoming investment opportunities in India for NRIs through a detailed analysis that suits your investment goals.</p>
             </div>
           </div>
 
@@ -780,10 +778,9 @@
               <div class="service-icon">
                 <img src="newImages/opportunity.png" alt="Service Shape">
               </div>
-              <h3 class="service-title h5"><a class="text-inherit">GIFT City Mastery</a>
+              <h3 class="service-title h5"><a class="text-inherit">GIFT City Opportunities</a>
               </h3>
-              <p class="service-text">Explore emerging opportunities in GIFT City with exclusive insights from experts
-                on optimising financial prospects.</p>
+              <p class="service-text">Discover new possibilities in GIFT City with unique insights from experts on maximising financial opportunities.              </p>
             </div>
           </div>
 
@@ -792,9 +789,9 @@
               <div class="service-icon">
                 <img src="newImages/nri.png" alt="Service Shape">
               </div>
-              <h3 class="service-title h5"><a class="text-inherit">NRI Networking Gala</a></h3>
-              <p class="service-text">Connect and network with like-minded NRIs over dinner, fostering valuable
-                relationships and discussions on Indian financial matters.</p>
+              <h3 class="service-title h5"><a class="text-inherit">Connect With Fellow NRIs</a></h3>
+              <p class="service-text">The event offers a chance to connect with like-minded NRIs and their relatives interested in Indian financial affairs.
+              </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4  wow fadeInUp" data-wow-delay="0.4s">
@@ -802,17 +799,11 @@
               <div class="service-icon">
                 <img src="newImages/expert.png" alt="Service Shape">
               </div>
-              <h3 class="service-title h5"><a class="text-inherit">Expert Q&A Session</a></h3>
-              <p class="service-text">Personally resolve NRI queries with seasoned financial experts, ensuring clarity
-                on all financial concerns.</p>
+              <h3 class="service-title h5"><a class="text-inherit">Helpful Q&A Session             </a></h3>
+              <p class="service-text">Get personal help from experienced financial experts to clear up any concerns you have as an NRI or NRI family member.              </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-center mt-30 mt-md-0">
-            <a class="view-big-btn">
-              <i class="far fa-arrow-right"></i>
-              <!-- <span class="btn-text">View All Services</span> -->
-            </a>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -1101,7 +1092,9 @@
 
         <div class="accordion-item">
           <div class="accordion-header">Q. Is the event chargeable?</div>
-          <div class="accordion-content">Participation in the NRI Conclave is completely FREE in both Vadodara and Ahmedabad. As a part of our dedication to the NRI community, we offer this event as a free service, fostering inclusivity and ensuring accessibility to valuable information
+          <div class="accordion-content">Participation in the NRI Conclave is completely FREE in both Vadodara and
+            Ahmedabad. As a part of our dedication to the NRI community, we offer this event as a free service,
+            fostering inclusivity and ensuring accessibility to valuable information
           </div>
         </div>
       </div>
@@ -1332,7 +1325,8 @@
     }
 
     // Attach the functions to the button and close button
-    document.querySelector('.rc-event-btn').addEventListener('click', openPopup);
+    document.querySelector('.rc-float-btn').addEventListener('click', openPopup);
+    document.querySelector('.rc-event-btn ').addEventListener('click', openPopup);
     document.getElementById('closePopup').addEventListener('click', closePopup);
 
     // Open the popup after 5 seconds

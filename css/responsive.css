@@ -118,6 +118,8 @@
 		padding: 60px 20px 60px;
 	}
 
+	
+
 	.table td.con-speak-box {
 		padding: 20px;
 	}
@@ -419,7 +421,23 @@
 	.mainText {
 		padding: 0 20px;
 	}
+	.flexAbout {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
 
+	}
+	.aboutPara{
+		width: 100%;
+	}
+	.aboutVideo{
+		width: auto;
+		/* height: 300px; */
+		border: 1px solid black;
+		margin-top: 0px;
+		margin: 0 auto;
+	}
 	.accordion {
 		width: 100%;
 
@@ -481,6 +499,7 @@
 		align-items: center;
 		z-index: 1;
 	}
+
 	.rc-schedule-content p {
 		color: black;
 	}
@@ -579,7 +598,7 @@
 	}
 
 	.mycolor {
-		
+
 		width: auto;
 	}
 

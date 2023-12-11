@@ -118,7 +118,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Baloo Bhaijaan', cursive;
+	font-family: 'Poppins', sans-serif;
 	color: #3d3d3d;
 	margin-top: 0px;
 	font-style: normal;
@@ -339,7 +339,7 @@ label {
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .header-search {
@@ -647,14 +647,13 @@ label {
 	font-size: 36px;
 	color: #f7b205;
 	margin-bottom: 0;
-	font-style: italic;
+	font-style: normal;
 }
 
 .banner-content h2 {
 	font-size: 50px;
 	color: #fff;
-	text-transform: uppercase;
-	font-style: italic;
+	font-style: normal;
 	line-height: 56px;
 	margin-bottom: 30px;
 }
@@ -676,7 +675,7 @@ label {
 	text-align: center;
 	font-size: 40px;
 	line-height: 1;
-	font-family: 'Baloo Bhaijaan', cursive;
+	font-family: 'Poppins', sans-serif;
 	color: #f7b205;
 }
 
@@ -697,7 +696,7 @@ label {
 	display: block;
 	font-size: 15px;
 	color: #ebebeb;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -755,7 +754,7 @@ label {
 	font-weight: 700;
 	color: #e7005c;
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
 }
@@ -782,7 +781,7 @@ label {
 
 .arrow-btn {
 	color: #3d3d3d;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: .5px;
@@ -894,7 +893,7 @@ label {
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 5px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	letter-spacing: 1.8px;
 	color: #e7005c;
 }
@@ -925,6 +924,7 @@ label {
 	background-position: center;
 	background-size: cover;
 	color: black;
+	padding-bottom: 60px;
 }
 
 .recent-schedule-bg {
@@ -962,7 +962,7 @@ label {
 
 .schedule-tabs .nav-link {
 	font-size: 26px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	color: #1c1327;
 	background: #fff;
@@ -1013,7 +1013,7 @@ label {
 
 .rc-schedule-sidebar ul li a {
 	font-size: 15px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	color: #322b3a;
 	text-transform: uppercase;
@@ -1030,6 +1030,7 @@ label {
 .rc-schedule-content p {
 	font-size: 20px;
 	line-height: 30px;
+	color: black;
 }
 
 .rc-schedule-speakers {
@@ -1038,7 +1039,7 @@ label {
 
 .rc-schedule-content h2 {
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	color: #1c1327;
 	font-size: 38px;
@@ -1095,7 +1096,7 @@ label {
 .rc-schedule-bottom p {
 	margin-bottom: 0;
 	color: #5a5461;
-	font-style: italic;
+	font-style: normal;
 	border: 2px solid #e6e6e6;
 	background: #f7f7f7;
 	padding: 15px 20px;
@@ -1117,7 +1118,7 @@ label {
 
 .rc-speakers-info h3 {
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	margin-bottom: 5px;
@@ -1125,7 +1126,7 @@ label {
 
 .rc-speakers-info span {
 	font-size: 14px;
-	font-style: italic;
+	font-style: normal;
 	display: block;
 }
 
@@ -1229,7 +1230,7 @@ label {
 	font-weight: 700;
 	letter-spacing: 1.8px;
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	display: block;
 	margin-bottom: 5px;
 }
@@ -1270,7 +1271,7 @@ label {
 
 .more-speakers a {
 	color: #e7005c;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: .5px;
@@ -1324,7 +1325,7 @@ label {
 	display: block;
 	font-size: 13px;
 	text-transform: uppercase;
-	font-family: 'Baloo Bhaijaan', cursive;
+	font-family: 'Poppins', sans-serif;
 	color: #767676;
 }
 
@@ -1379,11 +1380,12 @@ h5 span {
 
 /* 11. Conference */
 .conference-bg {
-	background-image: url(../newImages/white.jpg);
+	/* background-image: url(../newImages/white.jpg); */
 	/* background-color: #050A2E; */
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
+	padding: 40px 0;
 }
 
 
@@ -1395,12 +1397,13 @@ h5 span {
 	top: 145px;
 	opacity: .1;
 	z-index: -1;
+	
 }
 
 .conference-wrap {
 	background: #ffffff;
-	padding: 60px 40px 80px;
-	box-shadow: 0px 2px 26.97px 2.03px rgba(134, 134, 134, 0.09);
+	/* padding: 60px 40px 80px;
+	box-shadow: 0px 2px 26.97px 2.03px rgba(134, 134, 134, 0.09); */
 }
 
 .conference-wrap .table td,
@@ -1574,7 +1577,7 @@ h5 span {
 	color: #fff;
 	line-height: 1;
 	font-size: 14px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -1583,6 +1586,7 @@ h5 span {
 	margin-left: -5px;
 	margin-right: -5px;
 	margin-bottom: 5px;
+	
 }
 
 .single-gallery-img {
@@ -1666,7 +1670,7 @@ h5 span {
 	font-size: 13px;
 	text-transform: uppercase;
 	color: #e7005c;
-	font-family: 'Baloo Bhaijaan', cursive;
+	font-family: 'Poppins', sans-serif;
 	margin-top: 10px;
 }
 
@@ -1699,7 +1703,7 @@ h5 span {
 	font-size: 25px;
 	line-height: 40px;
 	color: #e3e3e3;
-	font-style: italic;
+	font-style:normal;
 	margin-bottom: 60px;
 }
 
@@ -1721,7 +1725,7 @@ h5 span {
 	text-transform: uppercase;
 	color: #e7005c;
 	font-weight: 700;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -1823,7 +1827,7 @@ h5 span {
 
 .contact-content h5 {
 	font-size: 18px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	line-height: 1;
 	margin-bottom: 20px;
@@ -1864,7 +1868,7 @@ h5 span {
 	margin-bottom: 45px;
 	text-transform: uppercase;
 	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	background-color: transparent;
 }
@@ -1872,7 +1876,7 @@ h5 span {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
 	color: #ffffff;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	letter-spacing: 1px;
 }
@@ -2196,7 +2200,7 @@ blockquote {
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 500;
-	font-style: italic;
+	font-style: normal;
 	color: #362f3c;
 	padding-left: 90px;
 	position: relative;
@@ -2790,18 +2794,17 @@ blockquote::before {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: auto;
-	padding: 60px 50px;
-	padding-bottom: 0;
+	padding: 60px;
 }
 
 .custom-section {
-	padding: 50px 0;
+	padding: 50px 30px;
 	background-color: #f8f9fa;
 	box-shadow: 2px 3px 3px gray;
 }
 
 .custom-section img {
-	max-width: 100%;
+	width: 500px;
 	height: auto;
 }
 
@@ -2819,7 +2822,7 @@ blockquote::before {
 
 .paraClass {
 	font-weight: 800;
-	font-style: italic;
+	font-style: normal;
 }
 
 .service-icon img {
@@ -3075,19 +3078,16 @@ label {
 }
 
 #closePopup {
-	background-color: transparent;
-	color: #007BFF;
-	border: none;
+	/* background-color: transparent; */
+	/* color: #007BFF; */
+	/* border: none; */
 	/* padding: 10px 20px; */
 	cursor: pointer;
 	/* border-radius: 5px; */
-	margin-top: 10px;
+	/* margin-top: 10px; */
 
 }
 
-#closePopup:hover {
-	text-decoration: underline;
-}
 
 .centertext {
 	text-align: center;
@@ -3098,11 +3098,11 @@ label {
 }
 
 .mycolor {
-	font-size: 20px;
+	font-size: 16px;
 	color: #f7b205;
 	padding: 4px 8px;
 	font-weight: 700;
-	width: 677px;
+	width: 610px;
 	border: 1px solid #f7b205;
 }
 
@@ -3221,20 +3221,40 @@ a {
   } */
 
 .float_form_btn{
-	width: 70px;
-	height: 70px;
-	background: crimson;
+	width: auto;
+	height: 50px;
+	background: rgb(224, 29, 68);
+	padding: 0 10px;
 	position: fixed;
 	bottom: 94px;
 	right: 30px;
 	z-index: 100;
-	border-radius: 50%;
+	border-radius: 14px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
 }
+.crossbtn{
+	float: right;
+}
 .float_form_btn img{
 	width: 50px;
 	height: 50px;
+}
+
+.aboutVideo{
+	width: 30%;
+	height: 300px;
+	border: 1px solid black;
+	margin-top: 20px;
+}
+.flexAbout{
+	display: flex;
+	justify-content: center;
+	align-items: start;
+
+}
+.aboutPara{
+	width: 70%;
 }
