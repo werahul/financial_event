@@ -438,7 +438,7 @@
 		height: 100vh;
 	}
 	.text-section {
-		flex: 30%;
+		flex: 1;
 		padding: 0px;
 		box-sizing: border-box;
 		text-align: left;
@@ -465,7 +465,16 @@
 	}
 
 	.speakerSection {
-		padding: 20px 20px;
+		padding: 40px 20px;
+	}
+	.pb-25{
+		padding-bottom: 25px;
+	}
+	.dekstopView{
+		display: none;
+	}
+	.mobileView{
+		display: block;
 	}
 
 	.custom-section {
@@ -473,8 +482,8 @@
 	}
 
 	.conference-bg {
-		background-image: url(/newImages/solidBg.jpg);
-		padding-top: 20px;
+		/* background-image: url(/newImages/solidBg.jpg); */
+		padding-top: 40px;
 	}
 
 	.grid-container {
@@ -492,12 +501,34 @@
 	}
 
 	.mycolor {
-		font-size: 20px;
+		font-size: 16px;
 		color: #f7b205;
 		line-height: 29px;
-		padding-bottom: 6px;
+		padding-bottom: 5px;
+		font-weight: normal;
+		margin-top: 33px;
+		margin-bottom: 40px;
 	}
-
+	.coming-time .time-count {
+		margin-right: 8px !important;
+	}
+	.coming-time .time-count {
+		margin-bottom: 10px;
+		text-align: center;
+		font-size: 25px;
+		line-height: 1;
+		font-family: 'Poppins', sans-serif;
+		color: #f7b205;
+	}
+	.coming-time .time-count span {
+		display: block;
+		font-size: 12px;
+		color: #ebebeb;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 900;
+		/* text-transform: uppercase; */
+		letter-spacing: 1px;
+	}
 	.form-group {
 		margin-bottom: 5px;
 	}
@@ -512,13 +543,19 @@
 		font-size: 14px;
 	}
 	.autoPadMobile{
-		padding: 0 15px;
+		padding: 0 0px;
+	}
+	.text-11{
+		font-size: 12px;
+	}
+	.accordion-header{
+		font-weight: 600;
 	}
 	
 	.contact-bg {
 		/* background-image: url(../newImages/solidBg.jpg); */
 		height: auto;
-		padding: 10px 0px;
+		padding: 30px 0px;
 		background-size: cover;
 		background-position: center;
 		position: relative;
@@ -534,11 +571,11 @@
 	}
 
 	.spaceAround {
-		padding: 20px 10px;
+		padding: 40px 10px;
 	}
 
 	.faq-bg {
-		padding: 20px 10px;
+		padding: 30px 10px;
 	}
 
 	.navbar-icon {
@@ -623,7 +660,7 @@
 	.banner-bg {
 		display: flex;
 		align-items: center;
-		height: 880px;
+		height: 711px;
 	}
 
 	.mycolor {
@@ -640,13 +677,20 @@
 	}
 
 	.banner-content h2 {
-		font-size: 42px;
+		font-size: 34px;
+		color: #fff;
+		font-style: normal;
+		line-height: 44px;
+		margin-bottom: 30px;
 	}
 
 	.coming-time {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 2px;
+		margin-bottom: 22px;
+	}
+	.marginBottom {
+		margin-bottom: 40px;
 	}
 
 	.coming-time .time-count {
@@ -704,9 +748,12 @@
 	}
 
 	.rc-schedule-speakers {
-		margin-top: 50px;
+		margin-top: 0px;
 	}
 
+	.pb-40{
+		padding-bottom: 0;
+	}
 	.speaker-active {
 		padding-left: 100px;
 	}
@@ -725,7 +772,22 @@
 	}
 
 	.conference-wrap {
-		padding: 40px 20px 60px;
+		padding: 0px;
+	}
+	.float_form_btn {
+		width: auto;
+		height: 50px;
+		background: rgb(224, 29, 68);
+		padding: 0 10px;
+		position: fixed;
+		bottom: 30px;
+		right: 10px;
+		z-index: 100;
+		border-radius: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
 	}
 
 	.pricing-wrap {

@@ -2885,6 +2885,14 @@ blockquote::before {
 	cursor: pointer;
 }
 
+.mobileView {
+	display: none;
+}
+
+.dekstopView {
+	display: block;
+}
+
 .accordion-content {
 	display: none;
 	padding: 15px;

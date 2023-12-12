@@ -1517,12 +1517,12 @@ img + p {
 
 h2 + p,
 .heading-2 + p {
-	margin-top: 12px;
+	margin-top: 0px;
 }
 
 h3 + p,
 .heading-3 + p {
-	margin-top: 15px;
+	margin-top: 0px;
 }
 
 h5 + p,
@@ -4441,7 +4441,7 @@ textarea.form-input {
 	text-align: center;
 	line-height: 1.25;
 	color: #26264b;
-	padding: 20px;
+	padding: 0px;
 }
 
 .testimonial-text:before {
