@@ -24,14 +24,21 @@
 
 
 	// menu toggle
-	$(".navbar-toggler").on('click', function () {
-		$(".navbar-nav").toggleClass("mobile_menu");
-	});
+	// $(".navbar-toggle").on('click', function () {
+	// 	$(".navbar-nav").toggleClass("mobile_menu");
 
-	// Close mobile menu when a link is clicked
-	$(".navbar-nav li a").on('click', function () {
-		$(".navbar-collapse").removeClass("show");
-	});
+	// });
+
+	//   Close mobile menu when a link is clicked
+	// $(".navbar-nav li a").on('click', function () {
+	// 	$(".navbar-collapse").removeClass("show");
+	// 	$(".navbar-icon").removeClass("show");
+	// });
+	// $(".navbar-icon").on('click', function () {
+	// 	$(".navbar-collapse").removeClass("show");
+	// 	$(".navbar-nav").removeClass("show");
+	// });
+
 
 	// sticky-menu
 	$(window).on('scroll', function () {
@@ -44,9 +51,9 @@
 	});
 
 	// Ensure the hamburger button is always visible
-	$(document).ready(function () {
-		$(".navbar-toggler").removeClass("d-none"); // Remove the class that hides the button
-	});
+	// $(document).ready(function () {
+	// 	$(".navbar-toggler").removeClass("d-none"); // Remove the class that hides the button
+	// });
 
 
 	// countdown
@@ -59,13 +66,13 @@
 
 
 	// offcanvas menu
-	$(".menu-tigger").on("click", function () {
-		$(".extra-info,.offcanvas-overly").addClass("active");
-		return false;
-	});
-	$(".menu-close,.offcanvas-overly").on("click", function () {
-		$(".extra-info,.offcanvas-overly").removeClass("active");
-	});
+	// $(".menu-tigger").on("click", function () {
+	// 	$(".extra-info,.offcanvas-overly").addClass("active");
+	// 	return false;
+	// });
+	// $(".menu-close,.offcanvas-overly").on("click", function () {
+	// 	$(".extra-info,.offcanvas-overly").removeClass("active");
+	// });
 
 
 	// mainSlider
@@ -134,7 +141,7 @@
 	// Add this script at the end of your body tag or in the head
 
 	// Function to open the popup after 5 seconds
-	
+
 	// about-active
 	$('.about-active').slick({
 		dots: false,
@@ -304,11 +311,11 @@
 
 
 	//for menu active class
-	$('.portfolio-menu button').on('click', function (event) {
-		$(this).siblings('.active').removeClass('active');
-		$(this).addClass('active');
-		event.preventDefault();
-	});
+	// $('.portfolio-menu button').on('click', function (event) {
+	// 	$(this).siblings('.active').removeClass('active');
+	// 	$(this).addClass('active');
+	// 	event.preventDefault();
+	// });
 
 
 

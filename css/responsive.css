@@ -267,6 +267,7 @@
 	.banner-bg {
 		display: flex;
 		align-items: center;
+		
 	}
 
 	.banner-content {
@@ -662,8 +663,39 @@
 	.banner-bg {
 		display: flex;
 		align-items: center;
-		height: 595px;
+		height: 657px;
+		padding-top: 31%;
 	}
+	.main-menu {
+		margin-top: 30px;
+        display: flex;
+		flex-direction: column;
+		align-items: start;
+		
+    }
+	.main-menu a{
+       margin: 10px 0;
+	   font-weight: 700;
+	   font-size: 20px;
+    }
+	.main-navbar{
+		display: flex;
+		flex-direction: column;
+		padding: 20px 20px;
+		align-items: start;
+		position: fixed;
+		background: white;
+		z-index: 99;
+		width: 100%;
+
+		
+	}
+    .hamburger {
+        position: absolute;
+		display: flex;
+		right: 20px;
+		top: 30px;
+    }
 
 	.mycolor {
 
@@ -789,7 +821,7 @@
 		background: rgb(224, 29, 68);
 		padding: 0 10px;
 		position: fixed;
-		bottom: 30px;
+		bottom: 89px;
 		right: 10px;
 		z-index: 100;
 		border-radius: 14px;
