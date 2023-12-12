@@ -432,6 +432,17 @@
 	.aboutPara{
 		width: 100%;
 	}
+	.panelists h5{
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.panelists h3{
+		font-size: 20px;
+		font-weight: 700;
+	}
+	.panelists{
+		margin-top: 10px;
+	}
 	.flex-container {
 		display: flex;
 		flex-wrap: wrap;
