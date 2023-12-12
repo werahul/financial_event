@@ -1433,7 +1433,7 @@ h5 span {
 	font-size: 13px;
 	font-weight: 600;
 	/* text-transform: uppercase; */
-	color: #f7b205;
+	color: #9b7005;
 	margin-top: 3px;
 	margin-bottom: 5px;
 }
@@ -3311,3 +3311,18 @@ iframe {
 /* .aboutPara{
 	width: 70%;
 } */
+
+.newHeaderSection{
+	margin: 50px 0;
+	font-weight: 700;
+}
+.newHeaderSection p{
+	font-size: 20px;
+}
+.mainSection{
+	font-size: 24px;
+	font-weight: 700;
+}
+.underline{
+	text-decoration: underline;
+}
