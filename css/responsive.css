@@ -442,12 +442,13 @@
 		padding: 0px;
 		box-sizing: border-box;
 		text-align: left;
+		margin-bottom: 17px;
 	}
 	.fontSizeExtra{
-		font-size: 18px;
+		font-size: 17px;
 	} 
 	.fontForH3 {
-		font-size: 32px;
+		font-size: 30px;
 		padding-top: 10px;
 	}
 	.aboutVideo{
@@ -567,7 +568,7 @@
 
 	.rc-schedule-content p {
 		color: black;
-		font-size: 18px;
+		font-size: 17px;
 	}
 
 	.spaceAround {
@@ -599,6 +600,7 @@
 
 	.white-nowrap {
 		font-size: 25px;
+		margin-bottom: -26px;
 	}
 
 	.fontForH2 {
@@ -788,6 +790,9 @@
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
+	}
+	.lessMargin{
+		margin-bottom: -27px;
 	}
 
 	.pricing-wrap {
